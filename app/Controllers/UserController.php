@@ -1,7 +1,9 @@
 <?php
 namespace App\Controllers;
 
-class UserController {
+use Framework\Controller;
+
+class UserController extends Controller {
 
     public function __construct() {
     }

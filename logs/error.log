@@ -250,3 +250,4 @@ Stack trace:
 #1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
 #2 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:46:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 14
