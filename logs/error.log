@@ -143,3 +143,110 @@ Stack trace:
 #1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Router->action_by_uri()
 #2 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 8
+[27-Nov-2018 09:37:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 17
+[27-Nov-2018 09:37:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 17
+[27-Nov-2018 09:45:12 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 16
+[27-Nov-2018 09:45:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Src\Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:45:16 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 16
+[27-Nov-2018 09:45:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Src\Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:47:02 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 16
+[27-Nov-2018 09:47:02 Europe/Berlin] PHP Stack trace:
+[27-Nov-2018 09:47:02 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[27-Nov-2018 09:47:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Src\Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:48:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:48:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:49:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:13
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 13
+[27-Nov-2018 09:50:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:13
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 13
+[27-Nov-2018 09:50:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:13
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 13
+[27-Nov-2018 09:52:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:13
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 13
+[27-Nov-2018 09:54:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Framework\Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 09:54:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Framework\Router' not found in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[27-Nov-2018 10:13:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:13
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(21): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 13
+[27-Nov-2018 10:15:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(26): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:17:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(26): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:19:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class '\App\Controllers\UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(26): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:19:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(26): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:20:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(26): Framework\Router->call_controller_action('/user/{id}', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[27-Nov-2018 10:21:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/add', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(20): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16

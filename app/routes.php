@@ -1,4 +1,6 @@
 <?php
+namespace App;
+
 $routes = [
     '/user/delete' => ['controller' => 'UserController',
         'action' => 'delete_user'],

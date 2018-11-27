@@ -1,4 +1,6 @@
 <?php
+namespace Framework;
+
 class Router
 {
     protected $routes;
@@ -6,7 +8,10 @@ class Router
         $this->routes = $routes;
     }
     protected function call_controller_action(string $uri,?array $id):void{
+
         $controller = $this->routes[$uri]['controller'];
+        $controller = "App\\Controllers\\".$controller;
+
         $action = $this->routes[$uri]['action'];
         $controller = new $controller();
         $controller->$action($id[0]);
