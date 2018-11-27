@@ -1,0 +1,3 @@
+URL	Controller	Action
+/users  UsersController IndexAction
+/users/add UsersController AddAction

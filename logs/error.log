@@ -1,0 +1,145 @@
+[13-Nov-2018 10:27:33 Europe/Berlin] PHP Notice:  Undefined variable: var in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 11
+[13-Nov-2018 10:30:50 Europe/Berlin] PHP Notice:  Undefined variable: var in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 12
+[20-Nov-2018 09:38:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 17
+[20-Nov-2018 09:38:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 17
+[20-Nov-2018 09:39:16 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URL in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 7
+[20-Nov-2018 09:39:16 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URL in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 7
+[20-Nov-2018 09:45:41 Europe/Berlin] PHP Warning:  Use of undefined constant endl - assumed 'endl' (this will throw an Error in a future version of PHP) in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 10
+[20-Nov-2018 09:45:41 Europe/Berlin] PHP Warning:  Use of undefined constant endl - assumed 'endl' (this will throw an Error in a future version of PHP) in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 10
+[20-Nov-2018 10:12:59 Europe/Berlin] PHP Notice:  Undefined index: /32?page=2 in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:12:59 Europe/Berlin] PHP Notice:  Undefined index: /favicon.ico in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:07 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:07 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:27 Europe/Berlin] PHP Notice:  Undefined offset: 0 in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:28 Europe/Berlin] PHP Notice:  Undefined offset: 0 in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:49 Europe/Berlin] PHP Notice:  Undefined offset: 0 in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:13:49 Europe/Berlin] PHP Notice:  Undefined offset: 0 in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:14:01 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:14:01 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:14:08 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:14:08 Europe/Berlin] PHP Notice:  Undefined index: /favicon.ico in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:18:24 Europe/Berlin] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:18:24 Europe/Berlin] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:20:17 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:20:17 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:20:30 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:20:30 Europe/Berlin] PHP Notice:  Undefined index: /favicon.ico in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:20:42 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:20:42 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[20-Nov-2018 10:20:42 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:20:42 Europe/Berlin] PHP Notice:  Undefined index: /favicon.ico in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[20-Nov-2018 10:20:59 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:20:59 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[20-Nov-2018 10:20:59 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 14
+[20-Nov-2018 10:20:59 Europe/Berlin] PHP Notice:  Undefined index: /favicon.ico in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[20-Nov-2018 10:22:10 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:34:07 Europe/Berlin] PHP Warning:  Illegal string offset 'UserController' in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:34:28 Europe/Berlin] PHP Warning:  Illegal string offset 'action' in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[20-Nov-2018 10:43:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[20-Nov-2018 10:44:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[20-Nov-2018 10:44:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[20-Nov-2018 10:45:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:22
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[20-Nov-2018 10:45:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:22
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[20-Nov-2018 10:45:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[20-Nov-2018 10:45:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'ClassUserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[20-Nov-2018 10:46:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'UserController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Router->router_url()
+#1 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[26-Nov-2018 15:30:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:30:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:30:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:34:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:34:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:34:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 15:34:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Router::router_url() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:19
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 19
+[26-Nov-2018 22:06:02 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function UserController::get_user(), 0 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 12 and exactly 1 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:7
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(12): UserController->get_user()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(18): Router->controller_action('/user/{id}')
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(19): Router->router_url()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 7
+[26-Nov-2018 22:06:33 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function UserController::get_user(), 0 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 12 and exactly 1 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:7
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(12): UserController->get_user()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(18): Router->controller_action('/user/{id}')
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(19): Router->router_url()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 7
+[26-Nov-2018 22:10:40 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function UserController::get_user(), 0 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16 and exactly 1 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:7
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(16): UserController->get_user()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(22): Router->controller_action('/user/{id}', Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(19): Router->router_url()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 7
+[26-Nov-2018 22:11:43 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function UserController::get_user(), 0 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and exactly 1 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:7
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): UserController->get_user()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(23): Router->controller_action('/user/{id}', Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(19): Router->router_url()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 7
+[27-Nov-2018 09:19:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Router::call_controller_action() must be of the type array, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 27 and defined in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(27): Router->call_controller_action('/user/add', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 8
