@@ -5,8 +5,7 @@ use Framework\Controller;
 
 class UserController extends Controller {
 
-    public function __construct() {
-    }
+    public $id;
 
     public function get_user($id){
         echo 'user: ';
@@ -20,4 +19,11 @@ class UserController extends Controller {
     public function delete_user(){
         echo 'user deleted';
     }
+
+    public function show()
+    {
+        return $this->view("show.html", ["name" => "stefan"]);
+    }
+
+
 }

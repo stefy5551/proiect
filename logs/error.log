@@ -251,3 +251,146 @@ Stack trace:
 #2 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
 [27-Nov-2018 10:46:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 14
+[04-Dec-2018 09:49:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::../storage/cache/views/user/index.html() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/index', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[04-Dec-2018 09:50:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::../storage/cache/views/user/show.html() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/index', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[04-Dec-2018 09:53:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::../storage/cache/views/user/view.html() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/index', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP Warning:  Declaration of App\Controllers\UserController::show() should be compatible with Framework\Controller::show($id) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 6
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[04-Dec-2018 09:55:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::../storage/cache/views/user/show.html() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/index', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\UserController::view() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:23
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\UserController->view(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 23
+[04-Dec-2018 10:00:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(25): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(29): App\Controllers\UserController->view('../storage/cach...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\UserController->show(NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:02:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(20): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:03:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(20): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP Notice:  Trying to get property 'name' of non-object in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 19
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP   4. App\Controllers\UserController->show() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+[04-Dec-2018 10:05:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(19): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:06:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(20): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP Notice:  Trying to get property 'id' of non-object in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 20
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP   4. App\Controllers\UserController->show() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+[04-Dec-2018 10:07:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(20): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:10:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(20): Framework\Controller->view('../storage/cach...', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): Framework\Controller->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 26
+[04-Dec-2018 10:14:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::show() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17
+[04-Dec-2018 10:14:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:20
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(27): Framework\Controller->view('show.html', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\UserController->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 20
+[04-Dec-2018 10:14:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:20
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(27): Framework\Controller->view('show.html', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\UserController->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/user/view', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 20
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:40:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 10:45:11 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[04-Dec-2018 10:45:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:45:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Dec-2018 10:45:12 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[04-Dec-2018 10:45:12 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:45:12 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
