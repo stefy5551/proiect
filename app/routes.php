@@ -9,5 +9,7 @@ $routes = [
     '/user/add' => ['controller' => 'UserController',
         'action' => 'add_user'],
     '/user/view' => ['controller' => 'UserController',
+        'action' => 'show'],
+    '/index' => ['controller' => 'Authentification',
         'action' => 'show']
 ];

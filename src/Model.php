@@ -14,7 +14,7 @@ abstract class Model
         $dsn = Config::DB['driver'];
         $dsn .= ":host=".Config::DB['host'];
         $dsn .= ";dbname=".Config::DB['dbname'];
-        $dsn .= ";port=$config::DB['port']";
+        $dsn .= ";port=".Config::DB['port'];
         $dsn .= ";charset=".Config::DB['charset'];
 
         $options = [
@@ -28,7 +28,7 @@ abstract class Model
         }
 
    try {
-       return new PDO($dsn, $config['db']['user'], $config['db']['pass'], $options);
+       return new PDO($dsn, Config::DB['user'], Config::DB['pass'], $options);
    } catch (\PDOException $e) {
        throw new \PDOException($e->getMessage(), (int)$e->getCode());
    }
@@ -72,10 +72,10 @@ return $stmt->fetch();
         for($i=0; $i < count($data); $i++) {
 
             $values[]= $data[$i];
-            $columns += "key($data) = ? ";
+            $columns .= "key($data) = ? ";
          //if we are not at the last element with the iteration
          if(count($data) < ($i + 1)) {
-             $columns += "AND ";
+             $columns .= "AND ";
          }
        }
 

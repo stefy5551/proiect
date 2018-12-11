@@ -394,3 +394,78 @@ Stack trace:
 [04-Dec-2018 10:45:12 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
 [04-Dec-2018 10:45:12 Europe/Berlin] PHP Stack trace:
 [04-Dec-2018 10:45:12 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP Stack trace:
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP Stack trace:
+[08-Dec-2018 17:56:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[08-Dec-2018 17:56:43 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[08-Dec-2018 17:56:43 Europe/Berlin] PHP Stack trace:
+[08-Dec-2018 17:56:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[08-Dec-2018 17:56:44 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[08-Dec-2018 17:56:44 Europe/Berlin] PHP Stack trace:
+[08-Dec-2018 17:56:44 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:10:45 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:10:45 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:10:45 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:10:47 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:10:47 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:10:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:19:50 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:19:50 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:19:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:19:51 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:19:51 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:19:51 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:19:55 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:19:55 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:19:55 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:19:56 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:19:56 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:19:56 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:25:35 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:25:35 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:25:35 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:25:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:25:36 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:25:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:28:00 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:28:00 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:28:00 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:28:04 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:28:04 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:28:04 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:28:05 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:28:05 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:28:05 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:35 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:35 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:35 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:37 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:37 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:51 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:51 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:51 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:56:52 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:56:52 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:56:52 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 09:59:37 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
