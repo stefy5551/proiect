@@ -20,10 +20,10 @@ class UserController extends Controller {
         echo 'user deleted';
     }
 
-    public function show()
-    {
-        return $this->view("show.html", ["name" => "stefan"]);
-    }
+//    public function show()
+//    {
+//        return $this->view("show.html", ["name" => "stefan"]);
+//    }
 
 
 }

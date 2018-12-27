@@ -748,3 +748,44 @@ Stack trace:
 #1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
 #2 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 25
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP Warning:  Use of undefined constant show - assumed 'show' (this will throw an Error in a future version of PHP) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 12
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP Stack trace:
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[27-Dec-2018 13:39:43 Europe/Berlin] PHP   4. App\Controllers\Authentification->show() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:17
+[27-Dec-2018 13:42:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Twig_Loader_Filesystem::render() in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:20
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(13): Framework\Controller->view('show.html', Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Authentification->show(NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/show', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php on line 20
+[27-Dec-2018 13:48:09 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "login.html" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../storage/cache/views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('login.html')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('login.html')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('login.html')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('login.html')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(23): Twig_Environment->render('login.html', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(18): Framework\Controller->view('login.html')
+#6 D:\Facult in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[27-Dec-2018 13:48:52 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "login.html" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../storage/cache/views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('login.html')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('login.html')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('login.html')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('login.html')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(23): Twig_Environment->render('login.html', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(18): Framework\Controller->view('login.html')
+#6 D:\Facult in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[27-Dec-2018 13:48:54 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "show.html" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../storage/cache/views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('show.html')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('show.html')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('show.html')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('show.html')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(23): Twig_Environment->render('show.html', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(13): Framework\Controller->view('show.html', Array)
+#6 D:\Facult in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226

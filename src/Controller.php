@@ -10,7 +10,7 @@ class Controller
     {
         $loader = new \Twig_Loader_Filesystem(__DIR__ . '/../app/Views');
         $this->twig = new \Twig_Environment($loader, array(
-            'cache' => __DIR__ . '/../storage/cache/views',
+            'views' => __DIR__ . '/../app/Views',
         ));
     }
 

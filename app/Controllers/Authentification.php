@@ -9,10 +9,12 @@ class Authentification extends Controller
 {
     public function show()
     {
-        return $this->view("show.html", ["name" => "stefan"]);
+        echo 'show';
+        return $this->view("show.html", ["name" => "stefannn"]);
     }
     public function login()
     {
-        return $this->view("show.html");
+        echo 'login';
+        return $this->view("login.html");
     }
 }
