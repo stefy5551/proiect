@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Sted
  * Date: 12/11/2018
- * Time: 10:38 AM
+ * Time: 11:21 AM
  */
 
 namespace App\Controllers;
@@ -15,6 +15,6 @@ class Authentification extends Controller
 {
     public function show()
     {
-        return $this->view("authentification.html");
+        return $this->view("show.html", ["name" => "stefan"]);
     }
 }

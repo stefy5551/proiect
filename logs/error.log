@@ -469,3 +469,282 @@ Stack trace:
 [11-Dec-2018 09:59:37 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
 [11-Dec-2018 09:59:37 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
 [11-Dec-2018 09:59:37 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:00:34 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:00:37 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:00:37 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:00:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:01:07 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:01:44 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:01:45 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:01:45 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:01:45 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:01:45 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:40 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:42 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:42 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:43 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:43 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:02:47 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:02:55 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:03:08 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:03:32 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:05:07 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:05:10 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:05:10 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:05:10 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:05:11 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:05:11 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:05:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:10 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:10 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:10 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:11 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:11 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 14
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:06:13 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:22 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 6
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:06:25 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP Fatal error:  Class 'Framework\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 6
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:17
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[11-Dec-2018 10:06:28 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:07:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:07:18 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:08:10 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:08:10 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:08:10 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:08:11 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:08:11 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:08:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:08:17 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:08:17 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:08:17 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:08:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:09:08 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:08 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:08 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:09:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:09:20 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:20 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:09:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:09:36 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:36 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:09:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:09:49 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:49 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:49 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:09:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:09:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:11:22 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:11:22 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:11:22 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:11:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:11:49 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:11:49 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:11:49 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:11:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:13:58 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:13:58 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:13:58 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:13:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[11-Dec-2018 10:15:40 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:15:40 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:15:40 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:15:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:25
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(41): Framework\Router->call_controller_action_noid('/login')
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 25
+[11-Dec-2018 10:15:54 Europe/Berlin] PHP Notice:  Undefined variable: config in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 13
+[11-Dec-2018 10:15:54 Europe/Berlin] PHP Stack trace:
+[11-Dec-2018 10:15:54 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Dec-2018 10:15:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Authentification' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:25
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(41): Framework\Router->call_controller_action_noid('/login')
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(17): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 25
