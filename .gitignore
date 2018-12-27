@@ -1,6 +1,0 @@
-*.json
-/storage/*
-/vendor/*
-/logs/*
-*.lock
-*.txt
