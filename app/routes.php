@@ -13,6 +13,9 @@ $routes = [
     '/auth/show' => ['controller' => 'Authentification',
         'action' => 'show'],
     '/auth/login' => ['controller' => 'Authentification',
-        'action' => 'login']
+        'action' => 'login'],
+    '/auth/register' => ['controller' => 'Authentification',
+        'action' => 'register']
+
 
 ];

@@ -14,7 +14,10 @@ class Authentification extends Controller
     }
     public function login()
     {
-        echo 'login';
-        return $this->view("login.html");
+        return $this->view("login.view.php");
+    }
+    public function register()
+    {
+        return $this->view("register.view.php");
     }
 }
