@@ -9,12 +9,27 @@ class Router
     }
     protected function call_controller_action(string $uri,?array $id):void{
 
-        $controller = $this->routes[$uri]['controller'];
-        $controller = "App\\Controllers\\".$controller;
 
+        $controller = $this->routes[$uri]['controller'];
         $action = $this->routes[$uri]['action'];
+        $params = $this->routes[$uri]['params'];
+
+        $controller = "App\\Controllers\\".$controller;
         $controller = new $controller();
-        $controller->$action($id[0]);
+
+        $parameters = [];
+        foreach ($params as $param)
+        {
+            $parameters[$param] = null;
+            if (isset($_POST[$param]))
+            {
+                $parameters[$param] = $_POST[$param];
+            }
+        }
+//        $controller->{$action}($params, $split_query);
+
+        $controller->$action($parameters);
+
     }
     public function action_by_uri():void{
         $no_action_message = 'no action';

@@ -789,3 +789,682 @@ Stack trace:
 #4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(23): Twig_Environment->render('show.html', Array)
 #5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(13): Framework\Controller->view('show.html', Array)
 #6 D:\Facult in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP Warning:  require_once(db.php): failed to open stream: No such file or directory in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 5
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP Stack trace:
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[28-Dec-2018 15:37:20 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'db.php' (include_path='D:\Facultate\XAMPP\php\PEAR') in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 5
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP Stack trace:
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[28-Dec-2018 15:37:21 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[28-Dec-2018 15:49:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\login' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[28-Dec-2018 15:49:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\login' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[28-Dec-2018 15:52:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\login' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[28-Dec-2018 15:52:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\login' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP Fatal error:  Class 'App\Controllers\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 6
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP Stack trace:
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[28-Dec-2018 15:53:45 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[28-Dec-2018 15:54:37 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Login::loginUser() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[28-Dec-2018 15:54:45 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Login::loginUser() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[28-Dec-2018 15:56:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Login::loginUser() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[28-Dec-2018 15:57:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Login::loginUser() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[28-Dec-2018 16:01:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Login::loginUser(), 1 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and exactly 2 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[28-Dec-2018 16:01:55 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Login::loginUser(), 1 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and exactly 2 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php:8
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Login->loginUser(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login.php', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\login.php on line 8
+[30-Dec-2018 13:14:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\LoginController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[30-Dec-2018 13:15:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\LoginController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[30-Dec-2018 13:15:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\LoginController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:16
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 16
+[30-Dec-2018 13:16:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Authentification::loginAuthAction() must be of the type array, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Authentification->loginAuthAction(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:16:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Authentification::loginAuthAction() must be of the type array, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Authentification->loginAuthAction(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:18:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:18:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:18:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:18:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:18:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:18:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Framework\Router::action_by_uri() in D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+Stack trace:
+#0 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\public\index.php on line 18
+[30-Dec-2018 13:19:27 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Controllers\Authentification::loginAuthAction() must be of the type array, null given, called in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 17 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(17): App\Controllers\Authentification->loginAuthAction(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:32:42 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Authentification::loginAuthAction(), 1 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 31 and exactly 2 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:33:00 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Authentification::loginAuthAction(), 1 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 31 and exactly 2 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:33:09 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Authentification::loginAuthAction(), 1 passed in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 31 and exactly 2 expected in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:29
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 29
+[30-Dec-2018 13:33:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Login' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32
+[30-Dec-2018 13:36:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Login' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32
+[30-Dec-2018 13:39:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Login' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:31
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 31
+[30-Dec-2018 13:39:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\Login' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:31
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 31
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP Fatal error:  Class 'App\Controllers\Controller' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 8
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   4. spl_autoload_call() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:18
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   5. Composer\Autoload\ClassLoader->loadClass() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:18
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   6. Composer\Autoload\includeFile() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:322
+[30-Dec-2018 13:42:18 Europe/Berlin] PHP   7. include() D:\Facultate\XAMPP\htdocs\proiect\vendor\composer\ClassLoader.php:444
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP Notice:  Undefined index: username in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP Notice:  Undefined index: password in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 13:43:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 31
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:44:38 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 31
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:44:56 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 31
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 13:56:50 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:01:10 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP Notice:  Undefined index: dbname in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:01:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:02:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP Notice:  Undefined index: dbname in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:02:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP Notice:  Undefined index: database in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:05:00 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Notice:  Undefined index: php.local in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 15
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Notice:  Undefined index: database in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Notice:  Undefined index: username in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Notice:  Undefined index: password in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:06:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP Notice:  Undefined index: database in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:08:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP Notice:  Undefined index: dbname in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:15:03 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:26
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(26): PDO->prepare('SELECT * FROM u...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 26
+[30-Dec-2018 14:19:04 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP Notice:  Undefined index: dbname in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 16
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   5. App\Models\Login->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:32
+[30-Dec-2018 14:19:13 Europe/Berlin] PHP   6. App\Models\Login->newDbCon() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:15
+[30-Dec-2018 14:19:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(15): Framework\Model->newDbCon()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT('stefy222', 'parola')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 33
+[30-Dec-2018 14:21:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(15): Framework\Model->newDbCon()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT('stefy222', 'parola')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 33
+[30-Dec-2018 14:31:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(15): Framework\Model->newDbCon()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT('stefy222', 'parola')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 33
+[30-Dec-2018 14:35:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php:39
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(15): Framework\Model->newDbCon()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT('stefy22', 'parola')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\Model.php on line 39
+[30-Dec-2018 14:36:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 32
+[30-Dec-2018 14:39:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 33
+[30-Dec-2018 14:40:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 33
+[30-Dec-2018 14:40:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 32
+[30-Dec-2018 14:41:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 33
+[30-Dec-2018 14:42:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 32
+[30-Dec-2018 14:42:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 32
+[30-Dec-2018 14:42:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 33
+[30-Dec-2018 14:43:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::initiate_session() must be of the type array, object given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 35 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:18
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php(35): App\Models\Login->initiate_session(Object(stdClass))
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(33): App\Models\Login->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 18
+[30-Dec-2018 14:45:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:45:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 18
+[30-Dec-2018 14:47:02 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP Warning:  Use of undefined constant password - assumed 'password' (this will throw an Error in a future version of PHP) in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 34
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   5. App\Models\Login->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:33
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:34) in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 52
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   4. App\Controllers\Authentification->loginAuthAction() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   5. App\Models\Login->redirectAuthenticationForm() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php:34
+[30-Dec-2018 14:51:20 Europe/Berlin] PHP   6. header() D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:52
+[30-Dec-2018 14:52:09 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:52:36 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:53:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:53:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:53:53 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:54:47 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:56:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:57:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:58:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 14:58:07 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 15:01:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(31): App\Controllers\Authentification->loginAuthAction(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(47): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:32 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:47
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:41
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 21
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:41
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Notice:  Array to string conversion in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 12
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP Stack trace:
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:41
+[30-Dec-2018 15:05:36 Europe/Berlin] PHP   4. App\Controllers\UserController->get_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
