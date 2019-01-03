@@ -28,14 +28,17 @@ class Authentification extends Controller
     }
     public function loginAuthAction(array $params)
     {
-//        print_r($params);
         $authenticateInstance = new Login($params["username"],$params["password"]);
         $authentificationResult = $authenticateInstance->is_user_correct();
         if ($authentificationResult)
         {
-            return $this->view("show.html", ["name" => "stefannn"]);
+            header("Location: /user/home");
+//            return $this->view("show.html", ["name" => "stefannn"]);
         }
-//        $authenticateInstance->redirectAuthenticationForm($authentificationResult);
-        // /login/auth
+        else
+        {
+            header("Location: /login");
+        }
+//        return $this->view("login.view.php");
     }
 }

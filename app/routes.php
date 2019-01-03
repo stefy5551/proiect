@@ -17,6 +17,12 @@ $routes = [
     '/auth/show' => ['controller' => 'Authentification',
         'action' => 'show'],
 
+    '/user/home' => ['controller' => 'UserController',
+        'action' => 'home',
+        'params' => [/*empty*/]],
+
+
+
     '/login' => ['controller' => 'Authentification',
         'action' => 'login',
         'params' => [/*empty*/]],
@@ -25,9 +31,11 @@ $routes = [
         'action' => 'loginAuthAction',
         'params' => ['username', 'password']],
 
-    '/auth/register' => ['controller' => 'Authentification',
-        'action' => 'register'],
+    '/register' => ['controller' => 'Authentification',
+        'action' => 'register',
+        'params' => [/*empty*/]],
 
-    '/auth/LoginController.php' => ['controller' => 'login',
-        'action' => 'loginUser'],
+    '/auth/register' => ['controller' => 'UserController',
+        'action' => 'add_user',
+        'params' => ['username', 'password', 'email']]
 ];

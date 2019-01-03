@@ -17,6 +17,7 @@ class Router
         $controller = "App\\Controllers\\".$controller;
         $controller = new $controller();
 
+//        $controller->$action($id[0]);
         $parameters = [];
         foreach ($params as $param)
         {

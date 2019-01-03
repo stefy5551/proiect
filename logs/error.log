@@ -1468,3 +1468,166 @@ Stack trace:
 [30-Dec-2018 15:05:36 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
 [30-Dec-2018 15:05:36 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:41
 [30-Dec-2018 15:05:36 Europe/Berlin] PHP   4. App\Controllers\UserController->get_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:31
+[03-Jan-2019 11:14:12 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 11:14:12 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:14:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:15:34 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:15:56 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 11:17:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[03-Jan-2019 11:20:43 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "login.view.html" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../app/Views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('login.view.html')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('login.view.html')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('login.view.html')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('login.view.html')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(19): Twig_Environment->render('login.view.html', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(38): Framework\Controller->view('login in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[03-Jan-2019 11:20:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\Authentification->loginAuthAction(Array, NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[03-Jan-2019 11:21:27 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\Login::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php on line 32 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(32): App\Models\Login->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\Authentification->loginAuthAction(Array, NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\Login.php on line 11
+[03-Jan-2019 11:21:37 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "login.php" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../app/Views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('login.php')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('login.php')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('login.php')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('login.php')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(19): Twig_Environment->render('login.php', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\Authentification.php(38): Framework\Controller->view('login.php', Array)
+#6 D:\Facultate\XAMPP\ in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[03-Jan-2019 11:56:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::register() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/register', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[03-Jan-2019 11:57:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::register() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/register', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[03-Jan-2019 11:58:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\User' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/register', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 15
+[03-Jan-2019 11:58:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\User' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/register', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 15
+[03-Jan-2019 12:07:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\User' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/register', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 15
+[03-Jan-2019 12:08:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Models\User' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/register', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 15
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP Notice:  Undefined index: email in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 16
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP   4. App\Controllers\UserController->add_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 12:09:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to App\Models\User::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 16 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\User.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(16): App\Models\User->__CONSTRUCT('stefy2222', 'parola', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/register', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\User.php on line 15
+[03-Jan-2019 12:12:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\User::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 16 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\User.php:15
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(16): App\Models\User->__CONSTRUCT(NULL, NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->add_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/register', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\User.php on line 15
+[03-Jan-2019 12:14:48 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "login.view.html" (looked into: D:\Facultate\XAMPP\htdocs\proiect\src/../app/Views). in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('login.view.html')
+#1 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('login.view.html')
+#2 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('login.view.html')
+#3 D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('login.view.html')
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php(19): Twig_Environment->render('login.view.html', Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(21): Framework\Controller->view('login.v in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 13:15:58 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP Notice:  Undefined index: params in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 15
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 22
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 13:16:47 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48

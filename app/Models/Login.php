@@ -38,17 +38,17 @@ class Login extends Model
         }
         return FALSE;
     }
-
-    function redirectAuthenticationForm(bool $is_user_correct)
-    {
-        if($is_user_correct)
-        {
-            header("Location: ");
-        }
-        else
-        {
-            $_SESSION["wrong_username_or_password"] = "The username or password is wrong";
-            header("Location: login");
-        }
-    }
+//
+//    function redirectAuthenticationForm(bool $is_user_correct)
+//    {
+//        if($is_user_correct)
+//        {
+//            header("Location: ");
+//        }
+//        else
+//        {
+//            $_SESSION["wrong_username_or_password"] = "The username or password is wrong";
+//            header("Location: login");
+//        }
+//    }
 }

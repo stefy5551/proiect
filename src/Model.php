@@ -98,8 +98,18 @@ return $stmt->fetch();
      */
     public function new(array $data)
     {
+//        $sql = "INSERT INTO $table VALUES($data)";
+//        $password = password_hash($pass, PASSWORD_DEFAULT);
+//
+//        $stmt = $pdo -> prepare($sql);
+//        $stmt -> execute([$email, $password, $username]);
     }
+    function registerUser(string $username, $pass, $email, PDO $pdo): bool
+    {
 
+
+        return true;
+    }
 /**
      *Update data in table
      */

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
 </head>
 <body>
-<form align="center" action="register.php" method="post">
+<form align="center" action="auth/register" method="post">
     <div class="form-group">
         <h1> <span> Register </span></h1>
     </div>
