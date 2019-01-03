@@ -2,7 +2,7 @@
 namespace App\Models;
 use Framework\Model;
 
-class User extends Model
+class UserModel extends Model
 {
 //we have to set specify the corresponding model for the table
     protected $table = "users";
@@ -20,25 +20,33 @@ class User extends Model
         $this->pdo = $this->newDbCon();
     }
 
-    public function get_name_by_id($id)
-    {
-        return $this->get($id);
-    }
-
     function is_email_used()
     {
         $sql = "SELECT * FROM users WHERE email = (?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->email]);
         $result = $stmt->fetch();
-        if ($result) {
-            return FALSE;
+        if ($result)
+        {
+            return TRUE;
         }
+        return FALSE;
+    }
+    function is_username_used()
+{
+    $sql = "SELECT * FROM users WHERE username = (?)";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute([$this->username]);
+    $result = $stmt->fetch();
+    if ($result)
+    {
         return TRUE;
     }
+    return FALSE;
+}
     function add_user()
     {
-        if ($this->is_email_used()) {
+        if (!$this->is_email_used() and !$this->is_username_used()) {
             $sql = "INSERT INTO `users`(email, password, username) VALUES(?, ?, ?)";
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
             $stmt = $this->pdo->prepare($sql);
