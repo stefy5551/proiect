@@ -13,27 +13,22 @@
     <a class="button button-secondary" href="doctors" type="submit">Doctors</a>
     <a class="button button-secondary" href="specializations" type="submit">Specializations</a>
     <a class="button button-secondary" href="program" type="submit">Doctor program</a>
-    <a class="button button-secondary" href="appointments" type="submit">My appointments</a>
+    <a class="button button-secondary" href="appointments" type="submit">Appointments</a>
 </div>
 <div align="center">
     <table>
         <h2>{{title}}</h2>
         <div>
-            <th>Name</th>
             <th>Specialization</th>
             <tr></tr>
         </div>
         {% for result in all_results %}
-        <tbody >
-            <th>{{result.name}}</th>
+        <div>
             <th>{{result.specialization}}</th>
             <tr></tr>
-        </tbody>
+        </div>
         {% endfor %}
     </table>
-</div>
-<div>
-<!--    error message from session -->
 </div>
 
 </body>

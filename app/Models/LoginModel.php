@@ -4,8 +4,11 @@ use Framework\Model;
 
 class LoginModel extends Model
 {
+    private $id;
     private $username;
     private $password;
+    private $email;
+    private $is_admin;
     private $pdo;
 
     function __CONSTRUCT(string $username, string $password)
@@ -17,7 +20,12 @@ class LoginModel extends Model
 
     function initiate_session($result)
     {
-        $_SESSION["username"] = $result->username;
+        $_SESSION["id"] = $result->id;
+        $_SESSION["name"] = $result->name;
+        $_SESSION["username"]=$result->username;
+        $_SESSION["email"]=$result->email;
+        $_SESSION["is_doctor"]=$result->is_doctor;
+        $_SESSION["specialization"]=$result->specialization;
     }
 
     function is_user_correct(): bool
@@ -26,7 +34,7 @@ class LoginModel extends Model
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->username]);
         $result = $stmt->fetch();
-        session_start();
+
         if ($result)
         {
             if (password_verify($this->password, $result->password))

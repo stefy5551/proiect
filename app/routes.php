@@ -2,40 +2,52 @@
 namespace App;
 
 $routes = [
-    '/user/delete' => ['controller' => 'UserController',
-        'action' => 'delete_user'],
 
-    '/user/{id}' => ['controller' => 'UserController',
-        'action' => 'get_user'],
-
-    '/user/add' => ['controller' => 'UserController',
-        'action' => 'add_user'],
-
-    '/user/view' => ['controller' => 'UserController',
-        'action' => 'show'],
-
-    '/auth/show' => ['controller' => 'LoginController',
-        'action' => 'show'],
-
-    '/user/home' => ['controller' => 'UserController',
-        'action' => 'home',
-        'params' => [/*empty*/]],
-
-
-
+    # LOGIN
     '/login' => ['controller' => 'LoginController',
         'action' => 'login',
         'params' => [/*empty*/]],
 
     '/auth/login' => ['controller' => 'LoginController',
-        'action' => 'loginAuthAction',
+        'action' => 'login_user',
         'params' => ['username', 'password']],
 
-    '/register' => ['controller' => 'LoginController',
+    # REGISTER
+    '/register' => ['controller' => 'UserController',
         'action' => 'register',
         'params' => [/*empty*/]],
 
     '/auth/register' => ['controller' => 'UserController',
         'action' => 'add_user',
-        'params' => ['username', 'password', 'email']]
+        'params' => ['username', 'password', 'email', 'name']],
+
+    # USER
+
+    '/user/home' => ['controller' => 'UserController',
+        'action' => 'home',
+        'params' => [/*empty*/]],
+
+    '/user/logout' => ['controller' => 'LoginController',
+        'action' => 'logout',
+        'params' => [/*empty*/]],
+
+    '/user/doctors' => ['controller' => 'UserController',
+        'action' => 'doctors',
+        'params' => [/*empty*/]],
+
+    '/user/specializations' => ['controller' => 'UserController',
+        'action' => 'show_specializations',
+        'params' => [/*empty*/]],
+
+    '/user/appointments' => ['controller' => 'UserController',
+        'action' => 'show_appointments',
+        'params' => [/*empty*/]],
+
+    '/user/program' => ['controller' => 'UserController',
+        'action' => 'show_program',
+        'params' => [/*empty*/]],
+
+    '/user/make_appointment' => ['controller' => 'AppointmentController',
+        'action' => 'make_appointment',
+        'params' => ['program_id']]
 ];

@@ -1631,3 +1631,728 @@ Stack trace:
 [03-Jan-2019 13:16:47 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
 [03-Jan-2019 13:16:47 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
 [03-Jan-2019 13:16:47 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:08:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\LoginController::loginAuthAction() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[03-Jan-2019 15:11:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\LoginModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 20 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(20): App\Models\LoginModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 11
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 29
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:29
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:29) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 31
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:24:07 Europe/Berlin] PHP   5. header() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:31
+[03-Jan-2019 15:32:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\LoginModel::initiate_session() in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(21): App\Models\LoginModel->is_user_correct()
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 40
+[03-Jan-2019 15:32:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\LoginModel::initiate_session() must be of the type array, object given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 40 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:21
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php(40): App\Models\LoginModel->initiate_session(Object(stdClass))
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(21): App\Models\LoginModel->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 21
+[03-Jan-2019 15:33:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\LoginModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 20 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:14
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(20): App\Models\LoginModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 14
+[03-Jan-2019 15:33:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:23
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php(40): App\Models\LoginModel->initiate_session(Object(stdClass))
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(21): App\Models\LoginModel->is_user_correct()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 23
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:21
+[03-Jan-2019 15:34:19 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:21
+[03-Jan-2019 15:40:27 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:21
+[03-Jan-2019 15:42:02 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 40
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:23
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   6. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:23
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 27
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:48:27 Europe/Berlin] PHP   5. header() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:27
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:23
+[03-Jan-2019 15:48:43 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:23
+[03-Jan-2019 15:53:34 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 12
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:56:04 Europe/Berlin] PHP   4. App\Controllers\LoginController->login() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP Notice:  Undefined index: login_error in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 14
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:57:01 Europe/Berlin] PHP   4. App\Controllers\LoginController->login() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[03-Jan-2019 15:58:22 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[03-Jan-2019 15:59:17 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP Notice:  Undefined index: login_error in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 13
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:04:46 Europe/Berlin] PHP   4. App\Controllers\LoginController->login() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 40
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:33
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   6. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:33
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 37
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:05:27 Europe/Berlin] PHP   5. header() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:33
+[03-Jan-2019 16:05:49 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:13:03 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:13:34 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:15:27 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:15:52 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:18:42 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:37
+[03-Jan-2019 16:19:33 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:33
+[03-Jan-2019 16:24:13 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:24:22 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:24:22 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:24:22 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:24:22 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:24:22 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:24:23 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:24:23 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:33
+[03-Jan-2019 16:24:23 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:32
+[03-Jan-2019 16:26:52 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[03-Jan-2019 16:29:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\LoginController::register() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/register', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP Stack trace:
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:29
+[03-Jan-2019 16:30:57 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:41
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 26
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 12:44:03 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:40
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:54:04 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP Notice:  Undefined variable: _SESSION in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:54:11 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 14:54:57 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 14:55:08 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 14:57:45 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 30
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   4. App\Controllers\UserController->add_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   5. App\Models\UserModel->add_user() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:31
+[04-Jan-2019 15:06:16 Europe/Berlin] PHP   6. App\Models\UserModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:72
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 15:19:37 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 15:20:10 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 30
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   4. App\Controllers\UserController->add_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   5. App\Models\UserModel->add_user() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:31
+[04-Jan-2019 15:37:28 Europe/Berlin] PHP   6. App\Models\UserModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:72
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 15:47:09 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP Stack trace:
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[04-Jan-2019 15:58:20 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP Stack trace:
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[05-Jan-2019 10:41:27 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP Stack trace:
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[05-Jan-2019 11:02:09 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[05-Jan-2019 12:05:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::logout() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[05-Jan-2019 12:20:58 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hours.hour' in 'field list' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:104
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(99): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 104
+[05-Jan-2019 12:23:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'days.day' in 'field list' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(378) : eval()'d code on line 73
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP Stack trace:
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   4. App\Controllers\UserController->show_appointments() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   5. App\Controllers\UserController->view() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:70
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   6. Twig_Environment->render() D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:19
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   7. __TwigTemplate_76c0fad8f35fbc1cf67d6ae16fd162594a2c6149e0278aca62e39f24ab1d3721->render() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php:289
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   8. __TwigTemplate_76c0fad8f35fbc1cf67d6ae16fd162594a2c6149e0278aca62e39f24ab1d3721->display() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:375
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP   9. __TwigTemplate_76c0fad8f35fbc1cf67d6ae16fd162594a2c6149e0278aca62e39f24ab1d3721->displayWithErrorHandling() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:367
+[05-Jan-2019 12:37:13 Europe/Berlin] PHP  10. __TwigTemplate_76c0fad8f35fbc1cf67d6ae16fd162594a2c6149e0278aca62e39f24ab1d3721->doDisplay() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:390
+[05-Jan-2019 12:38:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN program on appointments.id_program = program.id and program.id_medic ' at line 3 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT  * FROM ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT  * FROM ...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.ph in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 12:39:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN appointments on appointments.id_program = program.id and program.id_m' at line 3 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT  * FROM ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT  * FROM ...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.ph in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 12:40:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN appointments on appointments.id_program = program.id and program.id_m' at line 3 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT  * FROM ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT  * FROM ...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.ph in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 13:55:26 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN appointments on appointments.id_program = program.id where program.id' at line 3 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT  * FROM ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT  * FROM ...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.ph in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 13:57:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* FROM users
+                  INNER JOIN program on users.id = program.id_medi' at line 1 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:109
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(109): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(104): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.ph in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 109
+[05-Jan-2019 13:59:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::show_program() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[05-Jan-2019 13:59:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::show_program() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP Stack trace:
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[05-Jan-2019 14:00:20 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[05-Jan-2019 14:00:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\UserController::show_program() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[05-Jan-2019 14:26:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'program.available' in 'where clause' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:111
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(111): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(106): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(82): App\Models\UserModel->get_program()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_program(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 111
+[05-Jan-2019 14:27:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'program.id_day' in 'on clause' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:112
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(112): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(107): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(82): App\Models\UserModel->get_program()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_program(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 112
+[05-Jan-2019 14:30:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SORT BY days.day' at line 5 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:113
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(113): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(108): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(82): App\Models\UserModel->get_program()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_program(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 113
+[05-Jan-2019 14:30:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SORT BY days.day' at line 5 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:113
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(113): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(108): App\Models\UserModel->get_items('SELECT days.day...')
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(82): App\Models\UserModel->get_program()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_program(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/program', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 113
+[05-Jan-2019 15:17:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\AppointmentModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php on line 19 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php(19): App\Models\AppointmentModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->make_appointment(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/make_appo...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 11
+[05-Jan-2019 15:19:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\AppointmentModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php on line 19 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php(19): App\Models\AppointmentModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->make_appointment(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/make_appo...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 11
+[05-Jan-2019 15:20:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\AppointmentModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php on line 19 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php(19): App\Models\AppointmentModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->make_appointment(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/make_appo...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 11
+[05-Jan-2019 15:24:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\AppointmentModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php on line 19 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php:11
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php(19): App\Models\AppointmentModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->make_appointment(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/make_appo...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 11
+[05-Jan-2019 15:25:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\LoginModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php on line 27 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:14
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php(27): App\Models\LoginModel->__CONSTRUCT(NULL, NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\LoginController->login_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/auth/login', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 14
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP Stack trace:
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[05-Jan-2019 15:27:07 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 11:58:44 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:04:26 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:05:13 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:11:09 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:11:26 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:11:35 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:12:31 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:19:55 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:22:46 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:22:57 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:23:07 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:26:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:106
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(106): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 106
+[11-Jan-2019 12:27:00 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:106
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(106): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 106
+[11-Jan-2019 12:27:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:106
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(106): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 106
+[11-Jan-2019 12:28:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php:105
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php(105): PDO->query('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php(68): App\Models\UserModel->get_all_appointments()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\UserController->show_appointments(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/appointme...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\UserModel.php on line 105
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:30:21 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$is_admin in D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php on line 27
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
+[11-Jan-2019 12:30:29 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42

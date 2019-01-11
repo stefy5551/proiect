@@ -9,22 +9,43 @@ class LoginController extends Controller
 {
     public function login()
     {
+        session_start();
+        if(isset($_SESSION))
+        {
+            if (isset($_SESSION["login_error"]))
+            {
+                echo $_SESSION["login_error"];
+            }
+        }
         return $this->view("login.view.php");
     }
-    public function register()
-    {
-        return $this->view("register.view.php");
-    }
+
     public function login_user(array $params)
     {
+        session_start();
+
         $user = new LoginModel($params["username"],$params["password"]);
         $is_user_correct = $user->is_user_correct();
 
         if ($is_user_correct)
         {
+            $_SESSION["login_error"] = "";
             header("Location: /user/home");
         }
         else
+        {
+            $_SESSION["login_error"] = "Username or password wrong";
+            header("Location: /login");
+        }
+    }
+    public function logout()
+    {
+        session_start();
+        if(isset($_COOKIE[session_name()]))
+            setcookie( session_name(), "", time()-3600, "/" );
+        $_SESSION = array();
+        session_destroy();
+        if(($_SERVER['REQUEST_URI'])!="/login")
         {
             header("Location: /login");
         }

@@ -9,7 +9,10 @@
         <h1> <span> Register </span></h1>
     </div>
     <div class="form-group">
-        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="username"  placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Name">
     </div>
     <div class="form-group">
         <input type="email"  name="email" placeholder="Email">
