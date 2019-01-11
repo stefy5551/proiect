@@ -20,4 +20,12 @@ class AppointmentController extends Controller
         $appointment->make_appointment();
         header("Location: /user/program");
     }
+    public function cancel_appointment(array $params)
+    {
+        session_start();
+
+        $appointment = new AppointmentModel($_SESSION["id"], $params["program_id"]);
+        $appointment->cancel_appointment();
+        header("Location: /user/appointments");
+    }
 }

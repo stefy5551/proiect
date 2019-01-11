@@ -16,27 +16,32 @@
     <a class="button button-secondary" href="appointments" type="submit">Appointments</a>
 </div>
 <div align="center">
-    <table>
-        <h2>{{title}}</h2>
-        <div>
-            <th>Name</th>
-            <th>Specialization</th>
-            <th>Email</th>
-            <th>Day</th>
-            <th>Start hour</th>
-            <tr></tr>
-        </div>
-        {% for result in all_results %}
-        <div>
-            <th>{{result.name}}</th>
-            <th>{{result.specialization}}</th>
-            <th>{{result.email}}</th>
-            <th>{{result.day}}</th>
-            <th>{{result.start_hour}}</th>
-            <tr></tr>
-        </div>
-        {% endfor %}
-    </table>
+    <form action="/user/cancel_appointment" method="post">
+        <table>
+            <h2>{{title}}</h2>
+            <div>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Email</th>
+                <th>Day</th>
+                <th>Start hour</th>
+                <tr></tr>
+            </div>
+            {% for result in all_results %}
+            <div>
+                <th>{{result.id}}</th>
+                <th>{{result.name}}</th>
+                <th>{{result.specialization}}</th>
+                <th>{{result.email}}</th>
+                <th>{{result.day}}</th>
+                <th>{{result.start_hour}}</th>
+                <th><button class="button-secondary" name="program_id" value="{{result.id}}" type="submit">cancel appointment</button></th>
+                <tr></tr>
+            </div>
+            {% endfor %}
+        </table>
+    <form/>
 </div>
 
 </body>

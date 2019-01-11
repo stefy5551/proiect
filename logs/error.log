@@ -2356,3 +2356,23 @@ Stack trace:
 [11-Jan-2019 12:30:29 Europe/Berlin] PHP   4. App\Controllers\LoginController->login_user() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
 [11-Jan-2019 12:30:29 Europe/Berlin] PHP   5. App\Models\LoginModel->is_user_correct() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\LoginController.php:28
 [11-Jan-2019 12:30:29 Europe/Berlin] PHP   6. App\Models\LoginModel->initiate_session() D:\Facultate\XAMPP\htdocs\proiect\app\Models\LoginModel.php:42
+[11-Jan-2019 12:53:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\AppointmentController::cancel_appointment() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/cancel_ap...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[11-Jan-2019 14:39:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\AppointmentController::cancel_appointment() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/cancel_ap...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[11-Jan-2019 14:55:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN program on  appointments.id_program = program.id' at line 2 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php:70
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php(70): PDO->prepare('DELETE from app...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php(77): App\Models\AppointmentModel->cancel_appointment_query()
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AppointmentController.php(28): App\Models\AppointmentModel->cancel_appointment()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->cancel_appointment(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/cancel_ap...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\pr in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 70

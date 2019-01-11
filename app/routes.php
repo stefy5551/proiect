@@ -49,5 +49,9 @@ $routes = [
 
     '/user/make_appointment' => ['controller' => 'AppointmentController',
         'action' => 'make_appointment',
+        'params' => ['program_id']],
+
+    '/user/cancel_appointment' => ['controller' => 'AppointmentController',
+        'action' => 'cancel_appointment',
         'params' => ['program_id']]
 ];

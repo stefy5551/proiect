@@ -91,7 +91,7 @@ class UserModel extends Model
     }
     function get_all_appointments()
     {
-        $query = "SELECT days.day, hours.start_hour, users.* FROM users
+        $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
                   INNER JOIN program on users.id = program.id_medic
                   INNER JOIN appointments on appointments.id_program = program.id
                   INNER JOIN days on days.id = program.id_day

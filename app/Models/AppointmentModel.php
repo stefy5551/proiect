@@ -42,26 +42,43 @@ class AppointmentModel extends Model
         return FALSE;
     }
 
-    function add_appointment()
+    function add_appointment_query()
     {
         $sql = "INSERT INTO `appointments`(id_user, id_program) VALUES(?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->id_user, $this->id_program]);
     }
 
-    function modify_availability()
+    function modify_availability(bool $value)
     {
-        $sql = "UPDATE program  SET Available = 0 WHERE id = (?);";
+        $sql = "UPDATE program  SET Available = (?) WHERE id = (?);";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$this->id_program]);
+        $stmt->execute([$value, $this->id_program]);
     }
     function make_appointment()
     {
         if($this->is_id_user_valid() and $this->is_id_program_valid() and $this->is_program_available())
         {
-            $this->add_appointment();
-            $this->modify_availability();
+            $this->add_appointment_query();
+            $this->modify_availability(False);
         }
-
+    }
+    function cancel_appointment_query()
+    {
+//        $sql = "DELETE from appointments
+//                where id_program = 1";
+        $sql = "DELETE appointments
+                FROM appointments INNER JOIN program on  appointments.id_program = program.id
+                where appointments.id_program = (?) and appointments.id_user = (?)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$this->id_program, $this->id_user]);
+    }
+    function cancel_appointment()
+    {
+        if($this->is_id_program_valid())
+        {
+            $this->cancel_appointment_query();
+            $this->modify_availability(True);
+        }
     }
 }
