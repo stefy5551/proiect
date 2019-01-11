@@ -2445,3 +2445,198 @@ Stack trace:
 #1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
 #2 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 18
+[11-Jan-2019 17:43:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\ProgramModel::is_item_valid() in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:44
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(78): App\Models\ProgramModel->is_time_taken()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(62): App\Models\ProgramModel->is_time_valid()
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(21): App\Models\ProgramModel->add_available_hour()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->add_available_hour(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/add_ava...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 44
+[11-Jan-2019 17:47:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hour' in 'where clause' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:49
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(49): PDO->prepare('SELECT id from ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(57): App\Models\ProgramModel->get_id_hour()
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(63): App\Models\ProgramModel->add_available_hour_query()
+#3 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(21): App\Models\ProgramModel->add_available_hour()
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->add_available_hour(Array)
+#5 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/add_ava...', NULL)
+#6 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#7 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 49
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 58
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   4. App\Controllers\ProgramController->add_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   5. App\Models\ProgramModel->add_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:21
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   6. App\Models\ProgramModel->add_available_hour_query() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:63
+[11-Jan-2019 17:48:43 Europe/Berlin] PHP   7. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:58
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 34
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   4. App\Controllers\ProgramController->add_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   5. App\Models\ProgramModel->add_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:21
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   6. App\Models\ProgramModel->is_time_valid() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:62
+[11-Jan-2019 17:51:01 Europe/Berlin] PHP   7. App\Models\ProgramModel->is_time_taken() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:72
+[11-Jan-2019 17:51:02 Europe/Berlin] PHP   8. App\Models\ProgramModel->is_item_free() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:45
+[11-Jan-2019 17:51:02 Europe/Berlin] PHP   9. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:34
+[11-Jan-2019 17:51:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:52
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(28): App\Models\ProgramModel->get_id_hour()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(20): App\Models\ProgramModel->__CONSTRUCT(21, '1', '7')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->add_available_hour(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/add_ava...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 52
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP Notice:  Undefined index: id in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 53
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   4. App\Controllers\ProgramController->add_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   5. App\Models\ProgramModel->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:20
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP   6. App\Models\ProgramModel->get_id_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:28
+[11-Jan-2019 17:54:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_hour' cannot be null in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:59
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(59): PDOStatement->execute(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(64): App\Models\ProgramModel->add_available_hour_query()
+#2 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(21): App\Models\ProgramModel->add_available_hour()
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->add_available_hour(Array)
+#4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/add_ava...', NULL)
+#5 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#6 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 59
+[11-Jan-2019 17:55:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:54
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(28): App\Models\ProgramModel->get_id_hour()
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(20): App\Models\ProgramModel->__CONSTRUCT(21, '1', '7')
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->add_available_hour(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/add_ava...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 54
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP Notice:  Undefined index: id in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php on line 28
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP Notice:  Trying to get property 'id' of non-object in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 54
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   5. App\Models\ProgramModel->__CONSTRUCT() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:28
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP   6. App\Models\ProgramModel->get_id_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:28
+[11-Jan-2019 18:05:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:84
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(84): PDOStatement->execute(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(29): App\Models\ProgramModel->remove_available_hour()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->remove_available_hour(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/remove_...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 84
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP Notice:  Undefined index: id in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php on line 28
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:07:59 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:85
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(85): PDOStatement->execute(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(29): App\Models\ProgramModel->remove_available_hour()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->remove_available_hour(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/remove_...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 85
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP Notice:  Undefined index: id in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php on line 28
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:08:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2031  in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:85
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php(85): PDOStatement->execute(NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php(29): App\Models\ProgramModel->remove_available_hour()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\ProgramController->remove_available_hour(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/remove_...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 85
+[11-Jan-2019 18:09:02 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 85
+[11-Jan-2019 18:09:02 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:09:03 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:85
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 85
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:10:15 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:10:16 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:10:16 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:85
+[11-Jan-2019 18:11:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting ',' or ';' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 19
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:12:07 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:12:08 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:12:08 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:13:15 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81
+[11-Jan-2019 18:13:37 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:13:38 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81
+[11-Jan-2019 18:14:49 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:29
+[11-Jan-2019 18:14:50 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, integer given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:27
+[11-Jan-2019 18:20:10 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, integer given in D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php on line 81
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   4. App\Controllers\ProgramController->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   5. App\Models\ProgramModel->remove_available_hour() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\ProgramController.php:27
+[11-Jan-2019 18:20:16 Europe/Berlin] PHP   6. PDOStatement->execute() D:\Facultate\XAMPP\htdocs\proiect\app\Models\ProgramModel.php:81

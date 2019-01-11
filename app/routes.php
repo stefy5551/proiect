@@ -76,5 +76,13 @@ $routes = [
         'action' => 'cancel_appointment',
         'params' => ['program_id']],
 
+    '/doctor/add_available_hour' => ['controller' => 'ProgramController',
+        'action' => 'add_available_hour',
+        'params' => ['day', 'hour']],
+
+    '/doctor/remove_available_hour' => ['controller' => 'ProgramController',
+        'action' => 'remove_available_hour',
+        'params' => ['program_id']],
+
 
 ];

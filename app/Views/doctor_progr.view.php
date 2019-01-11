@@ -26,20 +26,23 @@
 
             {% for result in all_results %}
             <div>
+
+                <form action="/doctor/remove_available_hour" method="post">
                 <th>{{result.id}} </th>
                 <th>{{result.day}}</th>
                 <th>{{result.start_hour}}</th>
-<!--                <th><button class="button-secondary" name="program_id" value="{{result.id}}" type="submit">make appointment</button></th>-->
+                <th><button class="button-secondary" name="program_id" value="{{result.id}}" type="submit">remove hour</button></th>
                  <tr></tr>
+                </form>
             </div>
             {% endfor %}
 
             <div>
-                <form action="/doctor/make_appointment" method="post">
+                <form action="/doctor/add_available_hour" method="post">
                     <th>Add new available day, hour to your schedule.</th>
-                    <th>Day: <input type="number" name="day"><br></th>
-                    <th>Start hour: <input type="number" name="hour"><br></th>
-                    <th><input type="submit"></th>
+                    <th>Day: <input type="number" name="day" required> <br></th>
+                    <th>Start hour: <input type="number" name="hour" required><br></th>
+                    <th><button class="button-primary" type="submit">add</button></th>
                 </form>
             </div>
         </table>
