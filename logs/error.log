@@ -2376,3 +2376,72 @@ Stack trace:
 #3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\AppointmentController->cancel_appointment(Array)
 #4 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/user/cancel_ap...', NULL)
 #5 D:\Facultate\XAMPP\htdocs\pr in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AppointmentModel.php on line 70
+[11-Jan-2019 15:24:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 86
+[11-Jan-2019 15:34:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\UserModel' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\DoctorController->show_program(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/program', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 33
+[11-Jan-2019 15:36:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\UserModel' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\DoctorController->show_program(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/program', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 33
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP Notice:  Undefined index: username in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 19
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP   4. App\Controllers\DoctorController->show_appointments() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 16:28:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Models\DoctorModel::__CONSTRUCT() must be of the type string, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 19 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\DoctorModel.php:24
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php(19): App\Models\DoctorModel->__CONSTRUCT(NULL, '', '', '')
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\DoctorController->show_appointments(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/appoint...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\DoctorModel.php on line 24
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 12
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP Stack trace:
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[11-Jan-2019 16:28:26 Europe/Berlin] PHP   4. App\Controllers\DoctorController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[11-Jan-2019 16:28:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\UserModel' not found in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php:33
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\DoctorController->show_program(Array)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/program', NULL)
+#2 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#3 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 33
+[11-Jan-2019 16:34:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'program.availability' in 'field list' in D:\Facultate\XAMPP\htdocs\proiect\app\Models\DoctorModel.php:58
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\DoctorModel.php(58): PDO->prepare('SELECT days.day...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php(34): App\Models\DoctorModel->get_program()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(32): App\Controllers\DoctorController->show_program(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/program', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\DoctorModel.php on line 58
+[11-Jan-2019 16:49:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\DoctorController::cancel_appointment() in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/cancel_...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 32
+[11-Jan-2019 16:50:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\AppointmentsController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:18
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/cancel_...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 18
+[11-Jan-2019 16:51:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\AppointmentsController' not found in D:\Facultate\XAMPP\htdocs\proiect\src\router.php:18
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(48): Framework\Router->call_controller_action('/doctor/cancel_...', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#2 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\src\router.php on line 18

@@ -75,18 +75,18 @@ class UserController extends Controller {
     {
         session_start();
 
-        $_SESSION["doctor_id"] = 21;
-        if(isset($_SESSION["doctor_id"]))
-        {
-            $user = new UserModel("", "", "", "");
-            $programs = $user->get_program();
+//        $_SESSION["doctor_id"] = 21;
+//        if(isset($_SESSION["doctor_id"]))
+//        {
+        $user = new UserModel("", "", "", "");
+        $programs = $user->get_program();
 
-            $this->view("user_progr.view.php", ["name" => $_SESSION["name"],"title" => "Programs", "all_results" => $programs]);
-        }
-        else
-        {
-            $this->view("user_progr.view.php", ["name" => $_SESSION["name"]]);
-        }
+        $this->view("user_progr.view.php", ["name" => $_SESSION["name"],"title" => "Programs", "all_results" => $programs]);
+//        }
+//        else
+//        {
+//            $this->view("user_progr.view.php", ["name" => $_SESSION["name"]]);
+//        }
     }
 
 }

@@ -12,7 +12,6 @@ class UserModel extends Model
     private $email;
     private $name;
     private $pdo;
-    private $appointments;
 
     function __CONSTRUCT(string $username, string $password, string $email, string $name)
     {

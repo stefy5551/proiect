@@ -8,7 +8,7 @@ class LoginModel extends Model
     private $username;
     private $password;
     private $email;
-    private $is_admin;
+    private $is_doctor;
     private $pdo;
 
     function __CONSTRUCT(string $username, string $password)
@@ -42,6 +42,20 @@ class LoginModel extends Model
                 $this->initiate_session($result);
                 return TRUE;
             }
+        }
+        return FALSE;
+    }
+    function is_user_doctor() : bool
+    {
+        $sql = "SELECT is_doctor FROM users WHERE username = (?)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$this->username]);
+        $result = $stmt->fetch();
+
+        if ($result)
+        {
+            if( $result->is_doctor)
+                return True;
         }
         return FALSE;
     }

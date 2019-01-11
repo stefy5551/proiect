@@ -53,5 +53,28 @@ $routes = [
 
     '/user/cancel_appointment' => ['controller' => 'AppointmentController',
         'action' => 'cancel_appointment',
-        'params' => ['program_id']]
+        'params' => ['program_id']],
+
+    # DOCTOR
+    '/doctor/home' => ['controller' => 'DoctorController',
+    'action' => 'home',
+    'params' => [/*empty*/]],
+
+    '/doctor/logout' => ['controller' => 'LoginController',
+        'action' => 'logout',
+        'params' => [/*empty*/]],
+
+    '/doctor/appointments' => ['controller' => 'DoctorController',
+        'action' => 'show_appointments',
+        'params' => [/*empty*/]],
+
+    '/doctor/program' => ['controller' => 'DoctorController',
+        'action' => 'show_program',
+        'params' => [/*empty*/]],
+
+    '/doctor/cancel_appointment' => ['controller' => 'AppointmentController',
+        'action' => 'cancel_appointment',
+        'params' => ['program_id']],
+
+
 ];

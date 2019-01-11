@@ -69,9 +69,9 @@ class AppointmentModel extends Model
 //                where id_program = 1";
         $sql = "DELETE appointments
                 FROM appointments INNER JOIN program on  appointments.id_program = program.id
-                where appointments.id_program = (?) and appointments.id_user = (?)";
+                where appointments.id_program = (?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$this->id_program, $this->id_user]);
+        $stmt->execute([$this->id_program]);
     }
     function cancel_appointment()
     {

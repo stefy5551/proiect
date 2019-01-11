@@ -26,6 +26,9 @@ class AppointmentController extends Controller
 
         $appointment = new AppointmentModel($_SESSION["id"], $params["program_id"]);
         $appointment->cancel_appointment();
-        header("Location: /user/appointments");
+        if($_SESSION['is_doctor'])
+            header("Location: /doctor/appointments");
+        else
+            header("Location: /user/appointments");
     }
 }
