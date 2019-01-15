@@ -30,10 +30,13 @@ class LoginController extends Controller
         if ($is_user_correct)
         {
             $_SESSION["login_error"] = "";
-            if($user->is_user_doctor())
-                header("Location: /doctor/home");
+            if($user->is_user_admin())
+                header("Location: /admin/home");
             else
-                header("Location: /user/home");
+                if($user->is_user_doctor())
+                    header("Location: /doctor/home");
+                else
+                    header("Location: /user/home");
         }
         else
         {

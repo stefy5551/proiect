@@ -44,9 +44,9 @@ class DoctorModel extends Model
                   INNER JOIN appointments on users.id = appointments.id_user
                   INNER JOIN program on appointments.id_program = program.id
                   INNER JOIN days on days.id = program.id_day
-                  INNER JOIN hours on hours.id = program.id_hour ";
+                  INNER JOIN hours on hours.id = program.id_hour where program.id_medic = (?)";
         $stmt = $this->pdo->prepare($query);
-        $stmt->execute();
+        $stmt->execute([$_SESSION["id"]]);
         return $stmt->fetchAll();
     }
     function get_program()

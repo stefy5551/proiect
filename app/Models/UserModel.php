@@ -113,4 +113,5 @@ class UserModel extends Model
         $stmt = $db->query($query);
         return $stmt->fetchAll();
     }
+
 }

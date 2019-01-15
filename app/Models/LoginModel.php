@@ -59,4 +59,18 @@ class LoginModel extends Model
         }
         return FALSE;
     }
+    function is_user_admin() : bool
+    {
+        $sql = "SELECT is_admin FROM users WHERE username = (?)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$this->username]);
+        $result = $stmt->fetch();
+
+        if ($result)
+        {
+            if( $result->is_admin)
+                return True;
+        }
+        return FALSE;
+    }
 }

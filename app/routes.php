@@ -84,5 +84,21 @@ $routes = [
         'action' => 'remove_available_hour',
         'params' => ['program_id']],
 
+    '/admin/home' => ['controller' => 'AdminController',
+        'action' => 'home',
+        'params' => [/*empty*/]],
+
+    '/admin/logout' => ['controller' => 'LoginController',
+        'action' => 'logout',
+        'params' => [/*empty*/]],
+
+    '/admin/delete_user' => ['controller' => 'AdminController',
+        'action' => 'delete_user',
+        'params' => ['user_id']],
+
+    '/admin/make_doctor' => ['controller' => 'AdminController',
+        'action' => 'make_doctor',
+        'params' => ['user_id']],
+
 
 ];
