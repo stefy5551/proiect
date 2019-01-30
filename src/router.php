@@ -7,8 +7,18 @@ class Router
     public function __construct($routes){
         $this->routes = $routes;
     }
+    private function checkGuard(string $route): void
+    {
+        if (isset($this->routes[$route]['guard']))
+        {
+            $guard = "\\App\\Guards\\".$this->routes[$route]['guard'];
+            (new $guard)->handle();
+        }
+    }
     protected function call_controller_action(string $uri,?array $id):void{
 
+
+        $this->checkGuard($uri);
 
         $controller = $this->routes[$uri]['controller'];
         $action = $this->routes[$uri]['action'];
@@ -33,7 +43,6 @@ class Router
 
     }
     public function action_by_uri():void{
-        $no_action_message = 'no action';
         $is_action = false;
 
         if (preg_match('/\d+/', $_SERVER['REQUEST_URI'], $id)) {
@@ -50,7 +59,7 @@ class Router
             }
         }
         if (!$is_action){
-            echo $no_action_message;
+            header("Location: /login");
         }
     }
 }

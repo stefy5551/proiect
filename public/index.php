@@ -6,7 +6,7 @@
     require_once "../app/routes.php";
 
     use App\Config;
-
+    Tracy\Debugger::enable(Tracy\Debugger::DEVELOPMENT);
     ini_set("error_log", __DIR__."/../logs/error.log");
     error_reporting(E_ALL);
     ini_set("display_errors", 0);

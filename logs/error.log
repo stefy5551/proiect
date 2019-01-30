@@ -2973,3 +2973,73 @@ Stack trace:
 #4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
 #5 {main}
   thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php on line 82
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP Stack trace:
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[28-Jan-2019 14:21:12 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 12
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[30-Jan-2019 16:02:52 Europe/Berlin] PHP   4. App\Controllers\DoctorController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\DoctorController.php on line 12
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:48
+[30-Jan-2019 16:03:00 Europe/Berlin] PHP   4. App\Controllers\DoctorController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:32
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:56
+[30-Jan-2019 16:09:37 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:40
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:56
+[30-Jan-2019 16:09:42 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:40
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 32
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:32
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:13:50 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 32
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:32
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP Notice:  Undefined index: name in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 33
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:14:02 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 32
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:14:07 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:32
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP Notice:  session_start(): A session had already been started - ignoring in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php on line 32
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP Stack trace:
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[30-Jan-2019 16:14:18 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:32
