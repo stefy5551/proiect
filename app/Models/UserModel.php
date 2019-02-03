@@ -4,7 +4,6 @@ use Framework\Model;
 
 class UserModel extends Model
 {
-//we have to set specify the corresponding model for the table
     protected $table = "users";
 
     private $username;

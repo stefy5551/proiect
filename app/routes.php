@@ -13,20 +13,15 @@ $routes = [
         'params' => ['username', 'password']],
 
     # REGISTER
-    '/register' => ['controller' => 'UserController',
+    '/register' => ['controller' => 'RegisterController',
         'action' => 'register',
         'params' => [/*empty*/]],
 
-    '/auth/register' => ['controller' => 'UserController',
+    '/auth/register' => ['controller' => 'RegisterController',
         'action' => 'add_user',
         'params' => ['username', 'password', 'email', 'name']],
 
     # USER
-
-    '/user/home' => ['controller' => 'UserController',
-        'action' => 'home',
-        'guard' => 'Authenticated',
-        'params' => [/*empty*/]],
 
     '/user/logout' => ['controller' => 'LoginController',
         'action' => 'logout',
@@ -34,7 +29,7 @@ $routes = [
         'params' => [/*empty*/]],
 
     '/user/doctors' => ['controller' => 'UserController',
-        'action' => 'doctors',
+        'action' => 'show_doctors',
         'guard' => 'Authenticated',
         'params' => [/*empty*/]],
 
@@ -65,9 +60,9 @@ $routes = [
 
     # DOCTOR
     '/doctor/home' => ['controller' => 'DoctorController',
-    'action' => 'home',
+        'action' => 'home',
         'guard' => 'Authenticated',
-    'params' => [/*empty*/]],
+        'params' => [/*empty*/]],
 
     '/doctor/logout' => ['controller' => 'LoginController',
         'action' => 'logout',

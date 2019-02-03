@@ -13,7 +13,7 @@
     <a class="button button-secondary" href="doctors" type="submit">Doctors</a>
     <a class="button button-secondary" href="specializations" type="submit">Specializations</a>
     <a class="button button-secondary" href="program" type="submit">Doctor program</a>
-    <a class="button button-secondary" href="appointments" type="submit">Appointments</a>
+    <a class="button button-secondary" href="appointments" type="submit">My appointments</a>
 </div>
 <div align="center">
     <form action="/user/cancel_appointment" method="post">

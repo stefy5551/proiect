@@ -16,6 +16,7 @@ use Framework\Model;
 #@TODO: 5. de rezolvat update-u ala la delete(de la admin parca)
 #@TODO: 6. de scos membrii din clasele Model
 #@TODO: 7. de folosit Model
+#@TODO: 8. daca ma loghez cu user si deschid o alta fereastra sa nu pot accesa decat user !!
 class AdminModel extends Model
 {
     protected $table = "users";
