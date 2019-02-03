@@ -11,7 +11,6 @@ namespace App\Models;
 use Framework\Model;
 #@TODO: 8. daca ma loghez cu user si deschid o alta fereastra sa nu pot accesa decat user !!
 #@TODO: 9. mesaje eroare
-#@TODO: 10. un user nu poate avea 2 programari in aceeasi ora si aceeasi zi:D
 class AdminModel extends Model
 {
     protected $table = "users";

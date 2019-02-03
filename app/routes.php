@@ -25,88 +25,83 @@ $routes = [
 
     '/user/logout' => ['controller' => 'LoginController',
         'action' => 'logout',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => [/*empty*/]],
 
     '/user/doctors' => ['controller' => 'UserController',
         'action' => 'show_doctors',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => [/*empty*/]],
 
     '/user/specializations' => ['controller' => 'UserController',
         'action' => 'show_specializations',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => [/*empty*/]],
 
     '/user/appointments' => ['controller' => 'UserController',
         'action' => 'show_appointments',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => [/*empty*/]],
 
     '/user/program' => ['controller' => 'UserController',
         'action' => 'show_program',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => [/*empty*/]],
 
     '/user/make_appointment' => ['controller' => 'AppointmentController',
         'action' => 'make_appointment',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => ['program_id']],
 
     '/user/cancel_appointment' => ['controller' => 'AppointmentController',
         'action' => 'cancel_appointment',
-        'guard' => 'Authenticated',
+        'guard' => 'UserAuthenticated',
         'params' => ['program_id']],
 
     # DOCTOR
-    '/doctor/home' => ['controller' => 'DoctorController',
-        'action' => 'home',
-        'guard' => 'Authenticated',
-        'params' => [/*empty*/]],
-
     '/doctor/logout' => ['controller' => 'LoginController',
         'action' => 'logout',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => [/*empty*/]],
 
     '/doctor/appointments' => ['controller' => 'DoctorController',
         'action' => 'show_appointments',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => [/*empty*/]],
 
     '/doctor/program' => ['controller' => 'DoctorController',
         'action' => 'show_program',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => [/*empty*/]],
 
     '/doctor/cancel_appointment' => ['controller' => 'AppointmentController',
         'action' => 'cancel_appointment',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => ['program_id']],
 
     '/doctor/add_available_hour' => ['controller' => 'ProgramController',
         'action' => 'add_available_hour',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => ['day', 'hour']],
 
     '/doctor/remove_available_hour' => ['controller' => 'ProgramController',
         'action' => 'remove_available_hour',
-        'guard' => 'Authenticated',
+        'guard' => 'DoctorAuthenticated',
         'params' => ['program_id']],
 
     '/admin/home' => ['controller' => 'AdminController',
         'action' => 'home',
-        'guard' => 'Authenticated',
+        'guard' => 'AdminAuthenticated',
         'params' => [/*empty*/]],
 
     '/admin/logout' => ['controller' => 'LoginController',
         'action' => 'logout',
-        'guard' => 'Authenticated',
+        'guard' => 'AdminAuthenticated',
         'params' => [/*empty*/]],
 
     '/admin/delete_user' => ['controller' => 'AdminController',
         'action' => 'delete_user',
-        'guard' => 'Authenticated',
+        'guard' => 'AdminAuthenticated',
         'params' => ['user_id']],
 
 

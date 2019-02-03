@@ -31,12 +31,21 @@ class LoginController extends Controller
         {
             $_SESSION["login_error"] = "";
             if($user->is_user_admin())
+            {
+                $_SESSION["admin_logged"] = 1;
                 header("Location: /admin/home");
-            else
-                if($user->is_user_doctor())
-                    header("Location: /doctor/program");
+            }
                 else
+                if($user->is_user_doctor())
+                {
+                    $_SESSION["doctor_logged"] = 1;
+                    header("Location: /doctor/program");
+                }
+                else
+                {
+                    $_SESSION["user_logged"] = 1;
                     header("Location: /user/doctors");
+                }
         }
         else
         {
