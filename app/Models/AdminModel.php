@@ -9,9 +9,6 @@
 namespace App\Models;
 
 use Framework\Model;
-#@TODO: 3. de scos campuri de peste tot
-#@TODO: 6. de scos membrii din clasele Model
-#@TODO: 7. de folosit Model
 #@TODO: 8. daca ma loghez cu user si deschid o alta fereastra sa nu pot accesa decat user !!
 #@TODO: 9. mesaje eroare
 #@TODO: 10. un user nu poate avea 2 programari in aceeasi ora si aceeasi zi:D
