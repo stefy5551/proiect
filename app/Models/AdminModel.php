@@ -9,7 +9,6 @@
 namespace App\Models;
 
 use Framework\Model;
-#@TODO: 1. cand fac un doctor sa i bag specializarea
 #@TODO: 2. cand vreau sa adaug o ora libera sa pot adauga in aceeasi ora cu alta ora libera de la alt doctor
 #@TODO: 3. de scos campuri de peste tot
 #@TODO: 4. de scos tabelele : hour and day

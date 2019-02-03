@@ -40,8 +40,18 @@
             <div>
                 <form action="/doctor/add_available_hour" method="post">
                     <th>Add new available day, hour to your schedule.</th>
-                    <th>Day: <input type="number" name="day" required> <br></th>
-                    <th>Start hour: <input type="number" name="hour" required><br></th>
+                    <th>Day:
+                        <select name="day">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <br></th>
+                    <th>Start hour: <input type="number" min="6" max="21" name="hour" required><br></th>
                     <th><button class="button-primary" type="submit">add</button></th>
                 </form>
             </div>

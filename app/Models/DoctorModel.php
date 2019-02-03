@@ -51,10 +51,9 @@ class DoctorModel extends Model
     }
     public function get_program()
     {
-        $query = "SELECT days.day, hours.start_hour, users.*, program.id, program.available FROM users
+        $query = "SELECT program.day, program.start_hour, users.*, program.id, program.available FROM users
                   INNER JOIN program on (?) = program.id_medic
-                  INNER JOIN days on days.id = program.id_day
-                  INNER JOIN hours on hours.id = program.id_hour where program.available = 1
+                  where program.available = 1
                   group by program.id";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$_SESSION["id"]]);
