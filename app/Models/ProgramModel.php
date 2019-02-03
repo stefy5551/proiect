@@ -14,7 +14,7 @@ class ProgramModel extends Model
     private $day;
     private $pdo;
 
-    function __CONSTRUCT($medic_id, $program_id, $day, $hour)
+    public function __CONSTRUCT($medic_id, $program_id, $day, $hour)
     {
         $this->medic_id = $medic_id;
         $this->program_id = $program_id;
@@ -24,7 +24,7 @@ class ProgramModel extends Model
         if($hour != 0)
             $this->get_id_hour();
     }
-    function is_item_free(string $query)
+    public function is_item_free(string $query) : bool
     {
         $sql = $query;
         $stmt = $this->pdo->prepare($sql);
@@ -36,12 +36,12 @@ class ProgramModel extends Model
         }
         return TRUE;
     }
-    function is_time_taken() : bool
+    public function is_time_taken() : bool
     {
         $query = "SELECT * from program WHERE id_day = (?) and id_hour = (?)";
         return !$this->is_item_free($query);
     }
-    function get_id_hour()
+    function get_id_hour() : void
     {
         $query = "SELECT * from hours where start_hour = (?)";
         $stmt = $this->pdo->prepare($query);
@@ -50,19 +50,19 @@ class ProgramModel extends Model
 
         $this->id_hour = $result->id;
     }
-    function add_available_hour_query()
+    public function add_available_hour_query() : void
     {
         $sql = "INSERT INTO `program`(id_medic, id_day, id_hour, available) VALUES(?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->medic_id, $this->day, $this->id_hour, 1]);
     }
-    function add_available_hour()
+    public function add_available_hour()
     {
         if($this->is_time_valid())
             $this->add_available_hour_query();
 
     }
-    function is_time_valid() : bool
+    public function is_time_valid() : bool
     {
 
         if ($this->day < 1 or $this->day > 7 or $this->hour < 6 or $this->hour > 22)
@@ -72,12 +72,11 @@ class ProgramModel extends Model
 
         return true;
     }
-    function remove_available_hour()
+    public function remove_available_hour() : void
     {
         $query = "DELETE from program where id = (?)";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$this->program_id]);
-//        $_SESSION["name"] = $this->program_id;
     }
 
 }

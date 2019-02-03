@@ -21,7 +21,7 @@ class DoctorModel extends Model
     private $name;
     private $pdo;
 
-    function __CONSTRUCT(string $username, string $password, string $email, string $name)
+    public function __CONSTRUCT(string $username, string $password, string $email, string $name)
     {
         $this->username = $username;
         $this->password = $password;
@@ -29,7 +29,7 @@ class DoctorModel extends Model
         $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
-    function initiate_session($result)
+    public function initiate_session($result) : void
     {
         $_SESSION["id"] = $result->id;
         $_SESSION["name"] = $result->name;
@@ -38,7 +38,7 @@ class DoctorModel extends Model
         $_SESSION["is_doctor"]=$result->is_doctor;
         $_SESSION["specialization"]=$result->specialization;
     }
-    function get_all_appointments()
+    public function get_all_appointments()
     {
         $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
                   INNER JOIN appointments on users.id = appointments.id_user
@@ -49,7 +49,7 @@ class DoctorModel extends Model
         $stmt->execute([$_SESSION["id"]]);
         return $stmt->fetchAll();
     }
-    function get_program()
+    public function get_program()
     {
         $query = "SELECT days.day, hours.start_hour, users.*, program.id, program.available FROM users
                   INNER JOIN program on (?) = program.id_medic

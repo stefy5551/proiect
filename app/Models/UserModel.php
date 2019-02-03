@@ -13,7 +13,7 @@ class UserModel extends Model
     private $name;
     private $pdo;
 
-    function __CONSTRUCT(string $username, string $password, string $email, string $name)
+    public function __CONSTRUCT(string $username, string $password, string $email, string $name)
     {
         $this->username = $username;
         $this->password = $password;
@@ -21,7 +21,7 @@ class UserModel extends Model
         $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
-    function initiate_session($result)
+    public function initiate_session($result) : void
     {
         $_SESSION["id"] = $result->id;
         $_SESSION["name"] = $result->name;
@@ -31,7 +31,7 @@ class UserModel extends Model
         $_SESSION["specialization"]=$result->specialization;
     }
 
-    function is_email_used()
+    public function is_email_used() : bool
     {
         $sql = "SELECT * FROM users WHERE email = (?)";
         $stmt = $this->pdo->prepare($sql);
@@ -43,19 +43,19 @@ class UserModel extends Model
         }
         return FALSE;
     }
-    function is_username_used()
-{
-    $sql = "SELECT * FROM users WHERE username = (?)";
-    $stmt = $this->pdo->prepare($sql);
-    $stmt->execute([$this->username]);
-    $result = $stmt->fetch();
-    if ($result)
+    public function is_username_used() : bool
     {
-        return TRUE;
+        $sql = "SELECT * FROM users WHERE username = (?)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$this->username]);
+        $result = $stmt->fetch();
+        if ($result)
+        {
+            return TRUE;
+        }
+        return FALSE;
     }
-    return FALSE;
-}
-    function add_user()
+    public function add_user() : bool
     {
         if (!$this->is_email_used() and !$this->is_username_used()) {
             $sql = "INSERT INTO `users`(email, password, username, name) VALUES(?, ?, ?, ?)";
@@ -78,17 +78,17 @@ class UserModel extends Model
             return FALSE;
         }
     }
-    function get_all_doctors()
+    public function get_all_doctors()
     {
         $query = "SELECT * from $this->table where is_doctor = 1";
         return $this->get_items($query);
     }
-    function get_all_specializations()
+    public function get_all_specializations()
     {
         $query = "SELECT specialization from $this->table where is_doctor = 1 group by Specialization";
         return $this->get_items($query);
     }
-    function get_all_appointments()
+    public function get_all_appointments()
     {
         $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
                   INNER JOIN program on users.id = program.id_medic
@@ -99,7 +99,7 @@ class UserModel extends Model
         $stmt->execute([$_SESSION["id"]]);
         return $stmt->fetchAll();
     }
-    function get_program()
+    public function get_program()
     {
         $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
                   INNER JOIN program on users.id = program.id_medic

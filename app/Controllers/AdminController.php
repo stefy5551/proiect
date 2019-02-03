@@ -9,7 +9,7 @@ use App\Models\AdminModel;
 
 class AdminController extends Controller
 {
-    public function home()
+    public function home() : void
     {
         session_start();
 
@@ -17,9 +17,8 @@ class AdminController extends Controller
         $users = $admin_model->get_all_users();
 
         $this->view("admin_home.view.php", ["name" => $_SESSION["name"],"title" => "Users", "all_results" => $users]);
-
     }
-    public function delete_user($params)
+    public function delete_user($params) : void
     {
         session_start();
 
@@ -29,7 +28,7 @@ class AdminController extends Controller
         $users = $admin_model->get_all_users();
         header("Location: /admin/home");
     }
-    public function make_doctor($params)
+    public function make_doctor($params) : void
     {
         session_start();
 

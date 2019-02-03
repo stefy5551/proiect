@@ -6,7 +6,7 @@ use App\Models\UserModel;
 
 class UserController extends Controller {
 
-    public function register()
+    public function register() : void
     {
         session_start();
         if(isset($_SESSION))
@@ -16,9 +16,9 @@ class UserController extends Controller {
                 echo $_SESSION["register_error"];
             }
         }
-        return $this->view("register.view.php");
+        $this->view("register.view.php");
     }
-    public function doctors()
+    public function doctors() : void
     {
         session_start();
 
@@ -27,12 +27,12 @@ class UserController extends Controller {
 
         $this->view("user_home.view.php", ["name" => $_SESSION["name"],"title" => "Doctors", "all_results" => $all_doctors]);
     }
-    public function home()
+    public function home() : void
     {
         session_start();
         $this->view("user_home.view.php", ["name" => $_SESSION["name"]]);
     }
-    public function add_user(array $params)
+    public function add_user(array $params) : void
     {
         session_start();
         
@@ -42,7 +42,7 @@ class UserController extends Controller {
         if ($is_user_successfully_added)
         {
             $_SESSION["register_error"] = "";
-            header("Location: /user/home");
+            header("Location: /user/doctors");
         }
         else
         {
@@ -50,7 +50,7 @@ class UserController extends Controller {
             header("Location: /register");
         }
     }
-    public function show_specializations()
+    public function show_specializations() : void
     {
         session_start();
 
@@ -60,7 +60,7 @@ class UserController extends Controller {
         $this->view("user_spec.view.php", ["name" => $_SESSION["name"],"title" => "Specializations", "all_results" => $all_specializations]);
     }
 
-    public function show_appointments()
+    public function show_appointments() : void
     {
         session_start();
 
@@ -68,10 +68,9 @@ class UserController extends Controller {
         $all_appointments = $user->get_all_appointments();
 
         $this->view("user_app.view.php", ["name" => $_SESSION["name"],"title" => "Appointments", "all_results" => $all_appointments]);
-
     }
 
-    public function show_program()
+    public function show_program() : void
     {
         session_start();
 

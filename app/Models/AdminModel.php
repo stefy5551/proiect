@@ -11,6 +11,11 @@ namespace App\Models;
 use Framework\Model;
 #@TODO: 1. cand fac un doctor sa i bag specializarea
 #@TODO: 2. cand vreau sa adaug o ora libera sa pot adauga in aceeasi ora cu alta ora libera de la alt doctor
+#@TODO: 3. de scos campuri de peste tot
+#@TODO: 4. de scos tabelele : hour and day
+#@TODO: 5. de rezolvat update-u ala la delete(de la admin parca)
+#@TODO: 6. de scos membrii din clasele Model
+#@TODO: 7. de folosit Model
 class AdminModel extends Model
 {
     protected $table = "users";
@@ -23,16 +28,16 @@ class AdminModel extends Model
 
     private $user_id;
 
-    function __CONSTRUCT(string $username, string $password, string $email, string $name, $user_id)
+    public function __CONSTRUCT(string $username, string $password, string $email, string $name, $user_id)
     {
+        $this->user_id = $user_id;
         $this->username = $username;
         $this->password = $password;
         $this->email = $email;
         $this->name = $name;
         $this->pdo = $this->newDbCon();
-        $this->user_id = $user_id;
     }
-    function initiate_session($result)
+    public function initiate_session($result) : void
     {
         $_SESSION["id"] = $result->id;
         $_SESSION["name"] = $result->name;
@@ -55,7 +60,7 @@ class AdminModel extends Model
         }
         return FALSE;
     }
-    function delete_user()
+    public function delete_user() : void
     {
 
         if($this->is_user_doctor())
@@ -93,7 +98,7 @@ class AdminModel extends Model
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$this->user_id]);
     }
-    function can_be_doctor() : bool # he should not have any appointment to any doctor
+    public function can_be_doctor() : bool # he should not have any appointment to any doctor
     {
         $query = "SELECT * from program
                   INNER JOIN appointments on appointments.id_program = program.id where appointments.id_user = (?)";
@@ -104,7 +109,7 @@ class AdminModel extends Model
             return false;
         return true;
     }
-    function make_doctor()
+    public function make_doctor() : void
     {
         if(!$this->can_be_doctor())
             return;
@@ -114,7 +119,7 @@ class AdminModel extends Model
         $stmt->execute([$this->user_id]);
     }
 
-    function get_all_users()
+    public function get_all_users()
     {
         $query = "SELECT * from $this->table";
         $stmt = $this->pdo->prepare($query);

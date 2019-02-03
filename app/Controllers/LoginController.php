@@ -7,7 +7,7 @@ use Framework\Controller;
 
 class LoginController extends Controller
 {
-    public function login()
+    public function login() : void
     {
         session_start();
         if(isset($_SESSION))
@@ -17,10 +17,10 @@ class LoginController extends Controller
                 echo $_SESSION["login_error"];
             }
         }
-        return $this->view("login.view.php");
+        $this->view("login.view.php");
     }
 
-    public function login_user(array $params)
+    public function login_user(array $params) : void
     {
         session_start();
 
@@ -34,9 +34,9 @@ class LoginController extends Controller
                 header("Location: /admin/home");
             else
                 if($user->is_user_doctor())
-                    header("Location: /doctor/home");
+                    header("Location: /doctor/program");
                 else
-                    header("Location: /user/home");
+                    header("Location: /user/doctors");
         }
         else
         {
@@ -44,7 +44,7 @@ class LoginController extends Controller
             header("Location: /login");
         }
     }
-    public function logout()
+    public function logout() : void
     {
         session_start();
         if(isset($_COOKIE[session_name()]))

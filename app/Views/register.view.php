@@ -20,6 +20,11 @@
     <div class="form-group">
         <input type="password" name="password" placeholder="Password">
     </div>
+    <div class="form-group">
+        <input type="checkbox" name="is_doctor"> Doctor<br>
+
+        <input type="text" name="Specialization" placeholder="Specialization">
+    </div>
     <div>
         <button class="button-primary" type="submit" >Submit</button>
         <a class="button button-primary" href="login" role="button">Login</a>

@@ -12,7 +12,7 @@ use Framework\Controller;
 
 class AppointmentController extends Controller
 {
-    public function make_appointment(array $params)
+    public function make_appointment(array $params) : void
     {
         session_start();
 
@@ -20,7 +20,7 @@ class AppointmentController extends Controller
         $appointment->make_appointment();
         header("Location: /user/program");
     }
-    public function cancel_appointment(array $params)
+    public function cancel_appointment(array $params) : void
     {
         session_start();
 

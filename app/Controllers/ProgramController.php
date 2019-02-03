@@ -13,7 +13,7 @@ use Framework\Controller;
 
 class ProgramController extends Controller
 {
-    public function add_available_hour(array $params)
+    public function add_available_hour(array $params) : void
     {
         session_start();
 
@@ -21,7 +21,7 @@ class ProgramController extends Controller
         $program->add_available_hour();
         header("Location: /doctor/program");
     }
-    public function remove_available_hour(array $params)
+    public function remove_available_hour(array $params) : void
     {
         $program = new ProgramModel(0, $params["program_id"], 0, 0);
         $program->remove_available_hour();

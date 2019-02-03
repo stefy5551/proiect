@@ -8,28 +8,28 @@ class AppointmentModel extends Model
     private $id_program;
     private $pdo;
 
-    function __CONSTRUCT($id_user, $id_program)
+    public function __CONSTRUCT($id_user, $id_program)
     {
         $this->id_user = $id_user;
         $this->id_program = $id_program;
         $this->pdo = $this->newDbCon();
     }
-    function is_id_user_valid()
+    public function is_id_user_valid() : bool
     {
         $query = "SELECT * from users WHERE id = (?)";
         return $this->is_item_valid($query, $this->id_user);
     }
-    function is_id_program_valid()
+    public function is_id_program_valid() : bool
     {
         $query = "SELECT * from program WHERE id = (?)";
         return $this->is_item_valid($query, $this->id_program);
     }
-    function is_program_available()
+    public function is_program_available() : bool
     {
         $query = "SELECT available from program WHERE id = (?)";
         return $this->is_item_valid($query, $this->id_program);
     }
-    function is_item_valid(string $query, $id)
+    public function is_item_valid(string $query, $id) : bool
     {
         $sql = $query;
         $stmt = $this->pdo->prepare($sql);
@@ -42,20 +42,20 @@ class AppointmentModel extends Model
         return FALSE;
     }
 
-    function add_appointment_query()
+    public function add_appointment_query() : void
     {
         $sql = "INSERT INTO `appointments`(id_user, id_program) VALUES(?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->id_user, $this->id_program]);
     }
 
-    function modify_availability(bool $value)
+    public function modify_availability(bool $value) : void
     {
         $sql = "UPDATE program  SET Available = (?) WHERE id = (?);";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$value, $this->id_program]);
     }
-    function make_appointment()
+    public function make_appointment() : void
     {
         if($this->is_id_user_valid() and $this->is_id_program_valid() and $this->is_program_available())
         {
@@ -63,7 +63,7 @@ class AppointmentModel extends Model
             $this->modify_availability(False);
         }
     }
-    function cancel_appointment_query()
+    public function cancel_appointment_query() : void
     {
 //        $sql = "DELETE from appointments
 //                where id_program = 1";
@@ -73,7 +73,7 @@ class AppointmentModel extends Model
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$this->id_program]);
     }
-    function cancel_appointment()
+    public function cancel_appointment() : void
     {
         if($this->is_id_program_valid())
         {

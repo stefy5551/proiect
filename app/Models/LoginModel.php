@@ -11,14 +11,14 @@ class LoginModel extends Model
     private $is_doctor;
     private $pdo;
 
-    function __CONSTRUCT(string $username, string $password)
+    public function __CONSTRUCT(string $username, string $password)
     {
         $this->username = $username;
         $this->password = $password;
         $this->pdo = $this->newDbCon();
     }
 
-    function initiate_session($result)
+    public function initiate_session($result) : void
     {
         $_SESSION["id"] = $result->id;
         $_SESSION["name"] = $result->name;
@@ -28,7 +28,7 @@ class LoginModel extends Model
         $_SESSION["specialization"]=$result->specialization;
     }
 
-    function is_user_correct(): bool
+    public function is_user_correct(): bool
     {
         $sql = "SELECT * FROM users WHERE username = (?)";
         $stmt = $this->pdo->prepare($sql);
@@ -45,7 +45,7 @@ class LoginModel extends Model
         }
         return FALSE;
     }
-    function is_user_doctor() : bool
+    public function is_user_doctor() : bool
     {
         $sql = "SELECT is_doctor FROM users WHERE username = (?)";
         $stmt = $this->pdo->prepare($sql);
@@ -59,7 +59,7 @@ class LoginModel extends Model
         }
         return FALSE;
     }
-    function is_user_admin() : bool
+    public function is_user_admin() : bool
     {
         $sql = "SELECT is_admin FROM users WHERE username = (?)";
         $stmt = $this->pdo->prepare($sql);
