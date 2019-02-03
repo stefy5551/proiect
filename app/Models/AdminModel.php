@@ -9,10 +9,7 @@
 namespace App\Models;
 
 use Framework\Model;
-#@TODO: 2. cand vreau sa adaug o ora libera sa pot adauga in aceeasi ora cu alta ora libera de la alt doctor
 #@TODO: 3. de scos campuri de peste tot
-#@TODO: 4. de scos tabelele : hour and day
-#@TODO: 5. de rezolvat update-u ala la delete(de la admin parca)
 #@TODO: 6. de scos membrii din clasele Model
 #@TODO: 7. de folosit Model
 #@TODO: 8. daca ma loghez cu user si deschid o alta fereastra sa nu pot accesa decat user !!

@@ -25,15 +25,6 @@ class UserModel extends Model
         $this->is_doctor = $is_doctor;
         $this->pdo = $this->newDbCon();
     }
-    public function initiate_session($result) : void
-    {
-        $_SESSION["id"] = $result->id;
-        $_SESSION["name"] = $result->name;
-        $_SESSION["username"]=$result->username;
-        $_SESSION["email"]=$result->email;
-        $_SESSION["is_doctor"]=$result->is_doctor;
-        $_SESSION["specialization"]=$result->specialization;
-    }
 
     public function is_email_used() : bool
     {

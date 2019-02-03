@@ -65,8 +65,6 @@ class AppointmentModel extends Model
     }
     public function cancel_appointment_query() : void
     {
-//        $sql = "DELETE from appointments
-//                where id_program = 1";
         $sql = "DELETE appointments
                 FROM appointments INNER JOIN program on  appointments.id_program = program.id
                 where appointments.id_program = (?)";

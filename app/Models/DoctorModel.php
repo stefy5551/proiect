@@ -29,15 +29,6 @@ class DoctorModel extends Model
         $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
-    public function initiate_session($result) : void
-    {
-        $_SESSION["id"] = $result->id;
-        $_SESSION["name"] = $result->name;
-        $_SESSION["username"]=$result->username;
-        $_SESSION["email"]=$result->email;
-        $_SESSION["is_doctor"]=$result->is_doctor;
-        $_SESSION["specialization"]=$result->specialization;
-    }
     public function get_all_appointments()
     {
         $query = "SELECT program.day, program.start_hour, users.*, program.id FROM users
