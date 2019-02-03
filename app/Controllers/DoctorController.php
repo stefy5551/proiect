@@ -19,7 +19,8 @@ class DoctorController extends Controller
         $doctor = new DoctorModel($_SESSION["username"], "", "", "");
         $all_appointments = $doctor->get_all_appointments();
 
-        $this->view("doctor_app.view.php", ["name" => $_SESSION["name"],"title" => "Appointments", "all_results" => $all_appointments]);
+        $this->view("doctor_app.view.php", ["name" => $_SESSION["name"],"title" => "Appointments",
+            "all_results" => $all_appointments]);
 
     }
 
@@ -30,6 +31,7 @@ class DoctorController extends Controller
         $user = new DoctorModel("", "", "", "");
         $programs = $user->get_program();
 
-        $this->view("doctor_progr.view.php", ["name" => $_SESSION["name"], "title" => "Program", "all_results" => $programs]);
+        $this->view("doctor_progr.view.php", ["name" => $_SESSION["name"], "title" => "Program",
+            "all_results" => $programs]);
     }
 }

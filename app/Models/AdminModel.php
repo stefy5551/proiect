@@ -13,33 +13,23 @@ use Framework\Model;
 #@TODO: 6. de scos membrii din clasele Model
 #@TODO: 7. de folosit Model
 #@TODO: 8. daca ma loghez cu user si deschid o alta fereastra sa nu pot accesa decat user !!
+#@TODO: 9. mesaje eroare
+#@TODO: 10. un user nu poate avea 2 programari in aceeasi ora si aceeasi zi:D
 class AdminModel extends Model
 {
     protected $table = "users";
-
-    private $username;
-    private $password;
-    private $email;
-    private $name;
     private $pdo;
 
-    private $user_id;
-
-    public function __CONSTRUCT(string $username, string $password, string $email, string $name,int $user_id)
+    public function __CONSTRUCT()
     {
-        $this->user_id = $user_id;
-        $this->username = $username;
-        $this->password = $password;
-        $this->email = $email;
-        $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
     
-    private function is_user_doctor() : bool
+    private function is_user_doctor(int $user_id) : bool
     {
         $sql = "SELECT is_doctor FROM users WHERE id = (?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$this->user_id]);
+        $stmt->execute([$user_id]);
         $result = $stmt->fetch();
         $_SESSION["name"] = $result;
         if ($result)
@@ -49,19 +39,19 @@ class AdminModel extends Model
         }
         return FALSE;
     }
-    public function delete_user() : void
+    public function delete_user(int $user_id) : void
     {
 
-        if($this->is_user_doctor())
+        if($this->is_user_doctor($user_id))
         {
             $query = "DELETE appointments from appointments
                       INNER JOIN program on program.id = appointments.id_program WHERE program.id_medic = (?)";
             $stmt = $this->pdo->prepare($query);
-            $stmt->execute([$this->user_id]);
+            $stmt->execute([$user_id]);
 
             $query = "DELETE from program WHERE id_medic = (?)";
             $stmt = $this->pdo->prepare($query);
-            $stmt->execute([$this->user_id]);
+            $stmt->execute([$user_id]);
         }
         else
         {
@@ -71,23 +61,20 @@ class AdminModel extends Model
                       SET pr.available = 1
                       where app.id_user = (?)";
             $stmt = $this->pdo->prepare($query);
-            $stmt->execute([$this->user_id]);
+            $stmt->execute([$user_id]);
 
             $query = "DELETE from appointments WHERE appointments.id_user = (?)";
             $stmt = $this->pdo->prepare($query);
-            $stmt->execute([$this->user_id]);
+            $stmt->execute([$user_id]);
         }
 
         $query = "DELETE from users WHERE id = (?)";
         $stmt = $this->pdo->prepare($query);
-        $stmt->execute([$this->user_id]);
+        $stmt->execute([$user_id]);
     }
 
     public function get_all_users()
     {
-        $query = "SELECT * from $this->table";
-        $stmt = $this->pdo->prepare($query);
-        $stmt->execute();
-        return $stmt->fetchAll();
+        return $this->getAll();
     }
 }

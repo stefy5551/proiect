@@ -1,29 +1,28 @@
 <?php
 namespace App\Models;
 use Framework\Model;
+use Framework\UsersModel;
 
-class UserModel extends Model
+class UserModel extends UsersModel
 {
     protected $table = "users";
 
-    private $username;
-    private $password;
-    private $email;
-    private $name;
-    private $is_doctor;
-    private $specialization;
     private $pdo;
 
-    public function __CONSTRUCT(string $username, string $password, string $email, string $name, bool $is_doctor=false,
-                                string $specialization = NULL)
+    public function __CONSTRUCT(string $username)
     {
         $this->username = $username;
-        $this->password = $password;
-        $this->email = $email;
-        $this->name = $name;
-        $this->specialization = $specialization;
-        $this->is_doctor = $is_doctor;
+        $this->get_user();
         $this->pdo = $this->newDbCon();
+    }
+    public function initiate_session($result) : void
+    {
+        $_SESSION["id"] = $result->id;
+        $_SESSION["name"] = $result->name;
+        $_SESSION["username"]=$result->username;
+        $_SESSION["email"]=$result->email;
+        $_SESSION["is_doctor"]=$result->is_doctor;
+        $_SESSION["specialization"]=$result->specialization;
     }
 
     public function is_email_used() : bool

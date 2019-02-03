@@ -11,8 +11,7 @@ class AdminController extends Controller
     {
         session_start();
 
-        $admin_model = new AdminModel("", "", "", "", 0);
-
+        $admin_model = new AdminModel();
         $users = $admin_model->get_all_users();
 
         $this->view("admin_home.view.php", ["name" => $_SESSION["username"], "title" => "Users",
@@ -22,11 +21,8 @@ class AdminController extends Controller
     {
         session_start();
 
-        $admin_model = new AdminModel("", "", "", "", $params["user_id"]);
-        $admin_model->delete_user();
-
-        $users = $admin_model->get_all_users();
-        $this->view("admin_home.view.php", ["name" => $_SESSION["username"], "title" => "Users",
-            "all_results" => $users]);
+        $admin_model = new AdminModel();
+        $admin_model->delete_user($params["user_id"]);
+        header("Location: /admin/home");
     }
 }

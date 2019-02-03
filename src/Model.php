@@ -7,6 +7,7 @@ use App\Config;
 abstract class Model
 {
     protected $table;
+
     public function newDbCon($resultAsArray = false)
     {
         $dsn = Config::DB['driver'];
@@ -39,14 +40,18 @@ abstract class Model
         $stmt = $db->query("SELECT * from $this->table");
         return $stmt->fetchAll();
     }
+
     /**
      *Return data with specified id/index
+     * @param $column = column to check by
+     * @param $column_value
+     * @return mixed
      */
-    public function get($id)
+    public function get($column, $column_value)
     {
         $db = $this->newDbCon();
-        $stmt = $db->prepare("SELECT * from $this->table where id=?");
-        $stmt->execute([$id]);
+        $stmt = $db->prepare("SELECT * from $this->table where (?) = (?)");
+        $stmt->execute([$column, $column_value]);
         return $stmt->fetch();
     }
     /**
