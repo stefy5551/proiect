@@ -14,7 +14,9 @@ class LoginController extends Controller
         {
             if (isset($_SESSION["login_error"]))
             {
-                echo $_SESSION["login_error"];
+                $this->view("login.view.php", ["login_error" => $_SESSION["login_error"]]);
+                unset($_SESSION["login_error"]);
+                return;
             }
         }
         $this->view("login.view.php");
@@ -29,7 +31,6 @@ class LoginController extends Controller
 
         if ($is_user_correct)
         {
-            $_SESSION["login_error"] = "";
             if($user->is_user_admin())
             {
                 $_SESSION["admin_logged"] = 1;

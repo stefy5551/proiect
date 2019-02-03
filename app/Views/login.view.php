@@ -18,6 +18,9 @@
         <button class="button-primary" type="submit">Submit</button>
         <a class="button button-primary" href="register" role="button">Register</a>
     </div>
+    <div>
+        <a>{{login_error}}</a>
+    </div>
 </form>
 </body>
 </html>

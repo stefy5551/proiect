@@ -14,7 +14,9 @@ class RegisterController extends Controller
         {
             if (isset($_SESSION["register_error"]))
             {
-                echo $_SESSION["register_error"];
+                $this->view("register.view.php", ["register_error" => $_SESSION["register_error"]]);
+                unset($_SESSION["register_error"]);
+                return;
             }
         }
         $this->view("register.view.php");
@@ -36,7 +38,6 @@ class RegisterController extends Controller
 
         if ($is_user_successfully_added)
         {
-            $_SESSION["register_error"] = "";
             if(isset($params['is_doctor']) == 1)
                 header("Location: /doctor/program");
             else
