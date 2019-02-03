@@ -7,7 +7,6 @@ use App\Config;
 abstract class Model
 {
     protected $table;
-
     public function newDbCon($resultAsArray = false)
     {
         $dsn = Config::DB['driver'];
@@ -42,16 +41,15 @@ abstract class Model
     }
 
     /**
-     *Return data with specified id/index
-     * @param $column = column to check by
-     * @param $column_value
+     *Return data with specified id/index/username
+     * @param $username
      * @return mixed
      */
-    public function get($column, $column_value)
+    public function get($username)
     {
         $db = $this->newDbCon();
-        $stmt = $db->prepare("SELECT * from $this->table where (?) = (?)");
-        $stmt->execute([$column, $column_value]);
+        $stmt = $db->prepare("SELECT * from users where username=(?)");
+        $stmt->execute([$username]);
         return $stmt->fetch();
     }
     /**

@@ -16,7 +16,6 @@ class UserController extends Controller {
 
         $this->view("user_home.view.php", ["name" => $_SESSION["name"],"title" => "Doctors",
             "all_results" => $all_doctors]);
-        print_r($_SESSION);
     }
     public function show_specializations() : void
     {
