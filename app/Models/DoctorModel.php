@@ -40,11 +40,10 @@ class DoctorModel extends Model
     }
     public function get_all_appointments()
     {
-        $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
+        $query = "SELECT program.day, program.start_hour, users.*, program.id FROM users
                   INNER JOIN appointments on users.id = appointments.id_user
                   INNER JOIN program on appointments.id_program = program.id
-                  INNER JOIN days on days.id = program.id_day
-                  INNER JOIN hours on hours.id = program.id_hour where program.id_medic = (?)";
+                  where program.id_medic = (?)";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$_SESSION["id"]]);
         return $stmt->fetchAll();
@@ -57,12 +56,6 @@ class DoctorModel extends Model
                   group by program.id";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$_SESSION["id"]]);
-        return $stmt->fetchAll();
-    }
-    private function get_items(string $query)
-    {
-        $db = $this->newDbCon();
-        $stmt = $db->query($query);
         return $stmt->fetchAll();
     }
 }
