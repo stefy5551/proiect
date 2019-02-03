@@ -96,21 +96,19 @@ class UserModel extends Model
     }
     public function get_all_appointments()
     {
-        $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
+        $query = "SELECT program.day, program.start_hour, users.*, program.id FROM users
                   INNER JOIN program on users.id = program.id_medic
                   INNER JOIN appointments on appointments.id_program = program.id
-                  INNER JOIN days on days.id = program.id_day
-                  INNER JOIN hours on hours.id = program.id_hour where appointments.id_user = ?";
+                  where appointments.id_user = ?";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$_SESSION["id"]]);
         return $stmt->fetchAll();
     }
     public function get_program()
     {
-        $query = "SELECT days.day, hours.start_hour, users.*, program.id FROM users
+        $query = "SELECT program.day, program.start_hour, users.*, program.id FROM users
                   INNER JOIN program on users.id = program.id_medic
-                  INNER JOIN days on days.id = program.id_day
-                  INNER JOIN hours on hours.id = program.id_hour where program.available = 1";
+                  where program.available = 1";
         return $this->get_items($query);
     }
     private function get_items(string $query)
