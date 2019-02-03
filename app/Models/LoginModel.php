@@ -30,8 +30,8 @@ class LoginModel extends Model
 
     public function is_user_correct(): bool
     {
-        $result = $this->get($this->username);
-        
+        $result = $this->get_by_username($this->username);
+
         if ($result)
         {
             if (password_verify($this->password, $result->password))
@@ -44,7 +44,7 @@ class LoginModel extends Model
     }
     public function is_user_doctor() : bool
     {
-        $result = $this->get($this->username);
+        $result = $this->get_by_username($this->username);
 
         if ($result)
         {
@@ -55,7 +55,7 @@ class LoginModel extends Model
     }
     public function is_user_admin() : bool
     {
-        $result = $this->get($this->username);
+        $result = $this->get_by_username($this->username);
 
         if ($result)
         {

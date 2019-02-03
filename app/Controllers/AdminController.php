@@ -14,7 +14,7 @@ class AdminController extends Controller
         $admin_model = new AdminModel();
         $users = $admin_model->get_all_users();
 
-        $this->view("admin_home.view.php", ["name" => $_SESSION["username"], "title" => "Users",
+        $this->view("admin_home.view.php", ["name" => $_SESSION["name"], "title" => "Users",
             "all_results" => $users]);
     }
     public function delete_user($params) : void

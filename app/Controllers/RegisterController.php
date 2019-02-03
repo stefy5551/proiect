@@ -27,13 +27,13 @@ class RegisterController extends Controller
         {
             $user = new UserModel($params["username"], $params["password"], $params["email"], $params["name"],
                                     $params["is_doctor"], $params["specialization"]);
-            $is_user_successfully_added = $user->add_user();
         }
         else
         {
             $user = new UserModel($params["username"], $params["password"], $params["email"], $params["name"]);
-            $is_user_successfully_added = $user->add_user();
         }
+        $is_user_successfully_added = $user->add_user();
+
         if ($is_user_successfully_added)
         {
             $_SESSION["register_error"] = "";

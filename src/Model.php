@@ -39,17 +39,30 @@ abstract class Model
         $stmt = $db->query("SELECT * from $this->table");
         return $stmt->fetchAll();
     }
+    public function get_all_query($query)
+    {
+        $db = $this->newDbCon();
+        $stmt = $db->query($query);
+        return $stmt->fetchAll();
+    }
 
     /**
      *Return data with specified id/index/username
      * @param $username
      * @return mixed
      */
-    public function get($username)
+    public function get_by_username($username)
     {
         $db = $this->newDbCon();
         $stmt = $db->prepare("SELECT * from users where username=(?)");
         $stmt->execute([$username]);
+        return $stmt->fetch();
+    }
+    public function get_by_email($email)
+    {
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from users where email=(?)");
+        $stmt->execute([$email]);
         return $stmt->fetch();
     }
     /**

@@ -15,18 +15,10 @@ class DoctorModel extends Model
 {
     protected $table = "users";
 
-    private $username;
-    private $password;
-    private $email;
-    private $name;
     private $pdo;
 
-    public function __CONSTRUCT(string $username, string $password, string $email, string $name)
+    public function __CONSTRUCT()
     {
-        $this->username = $username;
-        $this->password = $password;
-        $this->email = $email;
-        $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
     public function get_all_appointments()

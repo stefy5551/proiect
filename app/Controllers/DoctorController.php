@@ -16,7 +16,7 @@ class DoctorController extends Controller
     {
         session_start();
 
-        $doctor = new DoctorModel($_SESSION["username"], "", "", "");
+        $doctor = new DoctorModel();
         $all_appointments = $doctor->get_all_appointments();
 
         $this->view("doctor_app.view.php", ["name" => $_SESSION["name"],"title" => "Appointments",
@@ -28,7 +28,7 @@ class DoctorController extends Controller
     {
         session_start();
 
-        $user = new DoctorModel("", "", "", "");
+        $user = new DoctorModel();
         $programs = $user->get_program();
 
         $this->view("doctor_progr.view.php", ["name" => $_SESSION["name"], "title" => "Program",

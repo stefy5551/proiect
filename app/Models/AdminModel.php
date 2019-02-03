@@ -31,7 +31,7 @@ class AdminModel extends Model
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$user_id]);
         $result = $stmt->fetch();
-        $_SESSION["name"] = $result;
+
         if ($result)
         {
             if($result->is_doctor)
@@ -75,6 +75,7 @@ class AdminModel extends Model
 
     public function get_all_users()
     {
-        return $this->getAll();
+        $query = "SELECT * from $this->table";
+        return $this->get_all_query($query);
     }
 }
