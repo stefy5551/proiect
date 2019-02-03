@@ -19,7 +19,7 @@ $routes = [
 
     '/auth/register' => ['controller' => 'RegisterController',
         'action' => 'add_user',
-        'params' => ['username', 'password', 'email', 'name']],
+        'params' => ['username', 'password', 'email', 'name', 'specialization', 'is_doctor']],
 
     # USER
 

@@ -23,7 +23,7 @@
     <div class="form-group">
         <input type="checkbox" name="is_doctor"> Doctor<br>
 
-        <input type="text" name="Specialization" placeholder="Specialization">
+        <input type="text" name="specialization" placeholder="Specialization">
     </div>
     <div>
         <button class="button-primary" type="submit" >Submit</button>

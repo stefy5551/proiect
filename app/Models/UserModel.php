@@ -10,14 +10,19 @@ class UserModel extends Model
     private $password;
     private $email;
     private $name;
+    private $is_doctor;
+    private $specialization;
     private $pdo;
 
-    public function __CONSTRUCT(string $username, string $password, string $email, string $name)
+    public function __CONSTRUCT(string $username, string $password, string $email, string $name, bool $is_doctor=false,
+                                string $specialization = NULL)
     {
         $this->username = $username;
         $this->password = $password;
         $this->email = $email;
         $this->name = $name;
+        $this->specialization = $specialization;
+        $this->is_doctor = $is_doctor;
         $this->pdo = $this->newDbCon();
     }
     public function initiate_session($result) : void
@@ -57,10 +62,12 @@ class UserModel extends Model
     public function add_user() : bool
     {
         if (!$this->is_email_used() and !$this->is_username_used()) {
-            $sql = "INSERT INTO `users`(email, password, username, name) VALUES(?, ?, ?, ?)";
+            $sql = "INSERT INTO `users`(email, password, username, name, specialization, is_doctor) 
+                    VALUES(?, ?, ?, ?, ?, ?)";
             $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute([$this->email, $hashedPassword, $this->username, $this->name]);
+            $stmt->execute([$this->email, $hashedPassword, $this->username, $this->name, $this->specialization,
+                            $this->is_doctor]);
 
             $sql = "SELECT * FROM users WHERE username = (?)";
             $stmt = $this->pdo->prepare($sql);
