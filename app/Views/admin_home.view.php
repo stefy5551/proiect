@@ -30,10 +30,6 @@
                 <th><button class="button-secondary" name="user_id" value="{{result.id}}" type="submit">remove user</button></th>
                 </form>
 
-                <form action="/admin/make_doctor" method="post">
-                <th><button class="button-secondary" name="user_id" value="{{result.id}}" type="submit">make doctor</button></th>
-                </form>
-
                 <tr></tr>
         </tbody>
         {% endfor %}

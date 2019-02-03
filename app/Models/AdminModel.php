@@ -28,7 +28,7 @@ class AdminModel extends Model
 
     private $user_id;
 
-    public function __CONSTRUCT(string $username, string $password, string $email, string $name, $user_id)
+    public function __CONSTRUCT(string $username, string $password, string $email, string $name,int $user_id)
     {
         $this->user_id = $user_id;
         $this->username = $username;
@@ -37,15 +37,7 @@ class AdminModel extends Model
         $this->name = $name;
         $this->pdo = $this->newDbCon();
     }
-    public function initiate_session($result) : void
-    {
-        $_SESSION["id"] = $result->id;
-        $_SESSION["name"] = $result->name;
-        $_SESSION["username"]=$result->username;
-        $_SESSION["email"]=$result->email;
-        $_SESSION["is_doctor"]=$result->is_doctor;
-        $_SESSION["specialization"]=$result->specialization;
-    }
+    
     private function is_user_doctor() : bool
     {
         $sql = "SELECT is_doctor FROM users WHERE id = (?)";
@@ -76,45 +68,20 @@ class AdminModel extends Model
         }
         else
         {
-            # NOT WORKING
-            #  Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that
-            # corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN appointments on
-            # program.id = appointments.program_id' at line 2 in
-            # D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php on line 82 ????????????
-
-            $query = "UPDATE program SET available = true
-                      INNER JOIN appointments on program.id = appointments.program_id";
-            $stmt = $this->pdo->prepare($query);
-            $stmt->execute();
-
-            $query = "DELETE from appointments WHERE program.id_user = (?)";
+            $query = "UPDATE program as pr
+                      INNER JOIN appointments as app
+                      on pr.id = app.id_program
+                      SET pr.available = 1
+                      where app.id_user = (?)";
             $stmt = $this->pdo->prepare($query);
             $stmt->execute([$this->user_id]);
 
-            $_SESSION["name"] = "not doc";
+            $query = "DELETE from appointments WHERE appointments.id_user = (?)";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute([$this->user_id]);
         }
 
         $query = "DELETE from users WHERE id = (?)";
-        $stmt = $this->pdo->prepare($query);
-        $stmt->execute([$this->user_id]);
-    }
-    public function can_be_doctor() : bool # he should not have any appointment to any doctor
-    {
-        $query = "SELECT * from program
-                  INNER JOIN appointments on appointments.id_program = program.id where appointments.id_user = (?)";
-        $stmt = $this->pdo->prepare($query);
-        $stmt->execute([$this->user_id]);
-        $result = $stmt->fetch();
-        if($result)
-            return false;
-        return true;
-    }
-    public function make_doctor() : void
-    {
-        if(!$this->can_be_doctor())
-            return;
-
-        $query = "UPDATE users SET is_doctor = 1 WHERE id = (?)";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute([$this->user_id]);
     }

@@ -3043,3 +3043,41 @@ Stack trace:
 [30-Jan-2019 16:14:18 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:58
 [30-Jan-2019 16:14:18 Europe/Berlin] PHP   4. App\Controllers\UserController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
 [30-Jan-2019 16:14:18 Europe/Berlin] PHP   5. session_start() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\UserController.php:32
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php(378) : eval()'d code on line 36
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP Stack trace:
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   1. {main}() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:0
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   2. Framework\Router->action_by_uri() D:\Facultate\XAMPP\htdocs\proiect\public\index.php:18
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   3. Framework\Router->call_controller_action() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:57
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   4. App\Controllers\AdminController->home() D:\Facultate\XAMPP\htdocs\proiect\src\router.php:42
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   5. App\Controllers\AdminController->view() D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AdminController.php:20
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   6. Twig_Environment->render() D:\Facultate\XAMPP\htdocs\proiect\src\Controller.php:19
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   7. __TwigTemplate_3499c742deedcd3d069e3630c8ee0d64782b8f0ff781da04a1e3f4014a353eea->render() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Environment.php:289
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   8. __TwigTemplate_3499c742deedcd3d069e3630c8ee0d64782b8f0ff781da04a1e3f4014a353eea->display() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:375
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP   9. __TwigTemplate_3499c742deedcd3d069e3630c8ee0d64782b8f0ff781da04a1e3f4014a353eea->displayWithErrorHandling() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:367
+[03-Feb-2019 15:00:11 Europe/Berlin] PHP  10. __TwigTemplate_3499c742deedcd3d069e3630c8ee0d64782b8f0ff781da04a1e3f4014a353eea->doDisplay() D:\Facultate\XAMPP\htdocs\proiect\vendor\twig\twig\lib\Twig\Template.php:390
+[03-Feb-2019 15:06:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN `appointments` on program.id = appointments.program_id' at line 2 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php:79
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php(79): PDO->prepare('UPDATE program ...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AdminController.php(27): App\Models\AdminModel->delete_user()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(42): App\Controllers\AdminController->delete_user(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(57): Framework\Router->call_controller_action('/admin/delete_u...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php on line 79
+[03-Feb-2019 15:08:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to App\Models\AdminModel::__CONSTRUCT() must be of the type integer, null given, called in D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AdminController.php on line 26 and defined in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php:31
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AdminController.php(26): App\Models\AdminModel->__CONSTRUCT('', '', '', '', NULL)
+#1 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(42): App\Controllers\AdminController->delete_user(Array)
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(57): Framework\Router->call_controller_action('/admin/delete_u...', NULL)
+#3 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#4 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php on line 31
+[03-Feb-2019 15:08:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN `appointments` on `program.id` = `appointments.program_id`' at line 2 in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php:79
+Stack trace:
+#0 D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php(79): PDO->prepare('UPDATE `program...')
+#1 D:\Facultate\XAMPP\htdocs\proiect\app\Controllers\AdminController.php(27): App\Models\AdminModel->delete_user()
+#2 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(42): App\Controllers\AdminController->delete_user(Array)
+#3 D:\Facultate\XAMPP\htdocs\proiect\src\router.php(57): Framework\Router->call_controller_action('/admin/delete_u...', NULL)
+#4 D:\Facultate\XAMPP\htdocs\proiect\public\index.php(18): Framework\Router->action_by_uri()
+#5 {main}
+  thrown in D:\Facultate\XAMPP\htdocs\proiect\app\Models\AdminModel.php on line 79

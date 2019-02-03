@@ -16,11 +16,6 @@ class Controller
 
     public function view(string $viewFile, array $params = [])
     {
-        try {
-            echo $this->twig->render($viewFile, $params);
-        } catch (\Twig_Error_Loader $e) {
-        } catch (\Twig_Error_Runtime $e) {
-        } catch (\Twig_Error_Syntax $e) {
-        }
+        echo $this->twig->render($viewFile, $params);
     }
 }

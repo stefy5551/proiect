@@ -109,10 +109,6 @@ $routes = [
         'guard' => 'Authenticated',
         'params' => ['user_id']],
 
-    '/admin/make_doctor' => ['controller' => 'AdminController',
-        'action' => 'make_doctor',
-        'guard' => 'Authenticated',
-        'params' => ['user_id']],
 
 
 ];
